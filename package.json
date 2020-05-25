@@ -4,7 +4,9 @@
   "description": "A custom visualisation chart for use in Data Studio",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"concat": "cat dscc.min.js > viz.js; echo >> viz.js; cat chartSource.js >> viz.js",
+		"upload": "gsutil cp -a public-read manifest.json gs://ds-binomial-frequency-chart; gsutil cp -a public-read viz.* gs://ds-binomial-frequency-chart"
   },
   "repository": {
     "type": "git",
