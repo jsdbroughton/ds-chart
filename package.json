@@ -1,0 +1,26 @@
+{
+  "name": "ds-binomial-frequency-chart",
+  "version": "1.0.0",
+  "description": "A custom visualisation chart for use in Data Studio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsdbroughton/ds-binomial-frequency-chart.git"
+  },
+  "keywords": [
+    "datastudio",
+    "visualisation"
+  ],
+  "author": "Jonathon Broughton - @jsdbroughton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jsdbroughton/ds-binomial-frequency-chart/issues"
+  },
+  "homepage": "https://github.com/jsdbroughton/ds-binomial-frequency-chart#readme",
+  "dependencies": {
+    "@google/dscc": "^0.3.17"
+  }
+}
