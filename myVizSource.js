@@ -1,5 +1,4 @@
 function drawViz(data) {
-
   // set margins + canvas size
   const margin = { top: 10, bottom: 50, right: 10, left: 10 };
   const height = dscc.getHeight() - margin.top - margin.bottom;
@@ -16,9 +15,9 @@ function drawViz(data) {
   svg.setAttribute("width", `${width}px`);
 
   const rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
-  rect.setAttribute('width', `${width/2}px`);
-  rect.setAttribute('height', `${height/2}px`);
-  rect.style.fill =  'blue';
+  rect.setAttribute("width", `${width / 2}px`);
+  rect.setAttribute("height", `${height / 2}px`);
+  rect.style.fill = "blue";
 
   svg.append(rect);
 

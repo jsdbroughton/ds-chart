@@ -9,15 +9,15 @@
   "supportUrl": "https://url",
   "privacyPolicyUrl": "https://url",
   "description": "Community Visualization Codelab",
-  "devMode": false,
+  "devMode": true,
   "components": [{
-    "id": "barChart",
-    "name": "Bar Chart",
+    "id": "binomialChart",
+    "name": "Binomial Frequency Chart",
     "iconUrl": "https://raw.githubusercontent.com/googledatastudio/community-visualizations/master/docs/codelab/img/bar_chart.png",
-    "description": "Bar chart written in d3.js",
+    "description": "Binomial Frequency is the relative proportion of a dataset against two dimensions.",
     "resource": {
       "js": "gs://ds-binomial-frequency-chart/viz.js",
-      "config": "gs://ds-binomial-frequency-chart/viz.json",
+      "config": "gs://ds-binomial-frequency-chart/config.json",
       "css": "gs://ds-binomial-frequency-chart/viz.css"
     }
   }]
