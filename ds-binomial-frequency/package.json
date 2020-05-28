@@ -9,9 +9,11 @@
     },
     "scripts": {
         "build:dev": "dscc-scripts viz build -d dev",
-        "build:prod": "dscc-scripts viz build -d prod",
         "push:dev": "dscc-scripts viz push -d dev",
+        "deploy:dev": "npm run build:dev && npm run push:dev",
+        "build:prod": "dscc-scripts viz build -d prod",
         "push:prod": "dscc-scripts viz push -d prod",
+        "deploy:prod": "npm run build:prod && npm run push:prod",
         "update_message": "dscc-scripts viz update_message -f object",
         "start": "dscc-scripts viz start"
     },
