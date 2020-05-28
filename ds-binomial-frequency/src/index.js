@@ -31,8 +31,6 @@ function drawViz(message) {
         tables: { DEFAULT: results },
     } = message;
 
-    console.log({ message });
-
     const count = () => results.length;
 
     let documentFragment = document.createDocumentFragment();
@@ -44,6 +42,7 @@ function drawViz(message) {
     const rect = svgNode('rect');
     const title = svgNode('title');
     const text = svgNode('text');
+    const svgStyle = svgNode('style');
 
     let graph = node(document.createElement('div'), { classes: ['graph'] });
 
@@ -140,7 +139,18 @@ function drawViz(message) {
     gradient.appendChild(midStop);
     gradient.appendChild(endStop);
 
+    // <style type="text/css">
+    //     @import url('https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic');
+    //  </style>
+
+    let roboto = node(svgStyle, {
+        attributes: { type: 'text/css' },
+        text: `@import url('https://fonts.googleapis.com/css?family=Roboto:300,300italic');`,
+    });
+
     defs.appendChild(gradient);
+    defs.appendChild(roboto);
+
     chart.append(defs);
 
     // if there is a greater than zero results set.
@@ -177,7 +187,7 @@ function drawViz(message) {
                 'data-position': 1 - quadrant.count / count(resultsMatrix),
                 x: quadrant.x + quadrant.size / 2,
                 y: quadrant.y + quadrant.size / 2,
-                dy: 0.018,
+                dy: 0.05,
             },
             classes: ['count', quadrant.class.split(' ')],
             text: `${Math.sqrt(quadrant.count / count(resultsMatrix)) > 0.1 ? quadrant.count : ''}`,
@@ -186,7 +196,7 @@ function drawViz(message) {
     });
 
     let total = node(text, {
-        attributes: { x: 1.85, y: 1.9 },
+        attributes: { x: 1.75, y: 1.9 },
         classes: ['total', 'count'],
         text: `${count(resultsMatrix) || ''}`,
     });
