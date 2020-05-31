@@ -8,7 +8,7 @@
     "organization": "GRFN",
     "supportUrl": "https://url",
     "privacyPolicyUrl": "https://url",
-    "description": "Community Visualization Codelab",
+    "description": "Insights Components",
     "devMode": "DEVMODE_BOOL",
     "components": [
         {

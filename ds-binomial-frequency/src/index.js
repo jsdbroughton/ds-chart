@@ -13,27 +13,86 @@ const styleVal = (message, styleId) => {
         : message.style[styleId].defaultValue;
 };
 
-function node(sourceNode, { attributes, classes, text }) {
-    let node = sourceNode.cloneNode();
+const quadrantClick = (...args) => {
+    // this is the interactionId defined in the config
+    const interactionId = 'onClick';
+
+    const [concepts, event] = args;
+
+    let c1Concept, c2Concept;
+
+    console.log(concepts);
+
+    if (concepts && concepts.concept.c1) c1Concept = concepts.concept.c1.type;
+    if (concepts && concepts.concept.c2) c2Concept = concepts.concept.c2.type;
+
+    const {
+        target: { attributes },
+    } = event;
+
+    const {
+        c1Id: { value: c1 },
+        c2Id: { value: c2 },
+    } = attributes;
+
+    const interactionData = { concepts: [c1, c2], values: [[], []] };
+
+    interactionData.values[0][0] = c1Concept ? [...concepts.set] : [];
+    interactionData.values[0][1] = c2Concept ? [...concepts.set] : [];
+
+    console.log(interactionData);
+
+    const FILTER = dscc.InteractionType.FILTER;
+
+    dscc.sendInteraction(interactionId, FILTER, interactionData);
+};
+
+const node = (sourceNode, { attributes, classes, text, handlers }) => {
+    const node = sourceNode.cloneNode();
     attributes && Object.entries(attributes).forEach(([key, val]) => node.setAttribute(key, val));
     classes && classes.forEach((clas) => node.classList.add(clas));
+
+    handlers &&
+        handlers.forEach((handler) => {
+            const key = Object.keys(handler)[0];
+            if (key && handler[key]) {
+                const { fn, context } = handler[key];
+                node.addEventListener(
+                    key,
+                    (e) => {
+                        fn(context, e);
+                    },
+                    false
+                );
+            }
+        });
+
     node.textContent = text;
     return node;
-}
+};
 
-function svgNode(name, ns) {
+const svgNode = (name, ns) => {
     return document.createElementNS(ns || 'http://www.w3.org/2000/svg', name);
-}
+};
 
-function drawViz(message) {
-    let {
+function drawViz(data) {
+    const {
         style,
         tables: { DEFAULT: results },
-    } = message;
+        fields: { criteria: criteria },
+        interactions,
+    } = data;
+
+    const scale = 100;
+    // const dataSets = message.tables.DEFAULT.map((dataSet) => {
+    // return { label: dataSet.dimID, data: dataSet.metricID };
+    // });
+
+    console.log(data, interactions, results, data.fields.criteria);
 
     const count = () => results.length;
 
-    let documentFragment = document.createDocumentFragment();
+    const documentFragment = document.createDocumentFragment();
     const svg = svgNode('svg');
     const defs = svgNode('defs');
     const radialGradient = svgNode('radialGradient');
@@ -43,32 +102,28 @@ function drawViz(message) {
     const title = svgNode('title');
     const text = svgNode('text');
     const svgStyle = svgNode('style');
+    const line = svgNode('line');
 
-    let graph = node(document.createElement('div'), { classes: ['graph'] });
+    const graph = node(document.createElement('div'), { classes: ['graph'] });
 
-    let resultsMatrix = [
-        [50, 70],
-        [90, 30],
-    ];
+    const C1 = (criteria && criteria[0]) || 'Criterion 1';
+    const C2 = (criteria && criteria[1]) || 'Criterion 2';
 
-    let C1 = 'Criterion 1';
-    let C2 = 'Criterion 2';
-
-    let quadrants = [
+    const quadrants = [
         { criteria: { C1, C2 }, color: 'lowRiskColor', class: 'full', position: 'top-left' },
         { criteria: { C2 }, color: 'medRiskColor', class: 'partial', position: 'top-right' },
         { criteria: { C1 }, color: 'medRiskColor', class: 'partial', position: 'bottom-left' },
         { criteria: {}, color: 'highRiskColor', class: 'empty', position: 'bottom-right' },
     ];
-    let titles = [`${C1} and ${C2}`, `${C2} Only`, `${C1} Only`, 'No Matches'];
-    let classes = { 0: 'empty', 1: 'partial', 2: 'full' };
+    const titles = [`${C1} and ${C2}`, `${C2} Only`, `${C1} Only`, 'No Matches'];
+    const classes = { 0: 'empty', 1: 'partial', 2: 'full' };
 
-    let m = quadrants.map((quad) => {
+    const m = quadrants.map((quad) => {
         return results.reduce((count, issue) => {
-            let {
+            const {
                 criteria: { C1: c1, C2: c2 },
             } = quad;
-            let [c_1, c_2] = issue.criteria;
+            const [c_1, c_2] = issue.criteria;
 
             if (c1 && c2 && c_1 && c_2) count += 1;
             if (c1 && !c2 && c_1 && !c_2) count += 1;
@@ -79,18 +134,54 @@ function drawViz(message) {
         }, 0);
     });
 
-    resultsMatrix = [
+    const issues = quadrants.map((quad) => {
+        return results.reduce(
+            (issues, issue) => {
+                const {
+                    criteria: { C1: c1, C2: c2 },
+                } = quad;
+                const [c_1, c_2] = issue.criteria;
+
+                if (c1 && c2 && c_1 && c_2) {
+                    issues.set.add(issue);
+                    issues.concept = { c1, c2 };
+                }
+                if (c1 && !c2 && c_1 && !c_2) {
+                    issues.set.add(issue);
+                    issues.concept = { c1, c2 };
+                }
+                if (!c1 && c2 && !c_1 && c_2) {
+                    issues.set.add(issue);
+                    issues.concept = { c1, c2 };
+                }
+                if (!c1 && !c2 && !c_1 && !c_2) {
+                    issues.set.add(issue);
+                    issues.concept = { c1, c2 };
+                }
+
+                return issues;
+            },
+            { concept: {}, set: new Set() }
+        );
+    });
+
+    const resultsMatrix = [
         [m[0], m[1]],
         [m[2], m[3]],
+    ];
+
+    const issuesMatrix = [
+        [issues[0], issues[1]],
+        [issues[2], issues[3]],
     ];
 
     const flat = (matrix) => {
         return matrix.reduce((a, v) => a.concat(v), []);
     };
 
-    let graphData = quadrants.map((quad, i) => {
-        let row = flat(resultsMatrix)[i];
-
+    const graphData = quadrants.map((quad, i) => {
+        const row = flat(resultsMatrix)[i];
+        const issues = flat(issuesMatrix)[i];
         const size = Math.sqrt(row / count(resultsMatrix));
 
         return {
@@ -98,40 +189,36 @@ function drawViz(message) {
             class: `${classes[Object.keys(quad.criteria).length]} ${quad.position.replace('-', ' ')}`,
             count: row,
             color: quad.color,
-            size,
-            x: quad.position.includes('right') ? 1 : 1 - size,
-            y: quad.position.includes('bottom') ? 1 : 1 - size,
+            issues,
+            size: size * scale,
+            x: 1 * scale - (quad.position.includes('right') ? 0 : size) * scale,
+            y: 1 * scale - (quad.position.includes('bottom') ? 0 : size) * scale,
         };
     });
 
-    // set margins + canvas size
-    // const margin = { top: 10, bottom: 10, right: 10, left: 10 };
-    // const height = dscc.getHeight() - margin.top - margin.bottom;
-    // const width = dscc.getWidth() - margin.left - margin.right;
-
-    let chart = node(svg, {
-        attributes: { viewBox: '0 0 2 2' },
+    const chart = node(svg, {
+        attributes: { viewBox: `0 0 ${2 * scale} ${2 * scale}` },
         classes: ['quadrantGraph'],
     });
 
-    let gradient = node(radialGradient, {
-        attributes: { id: 'baseline', cx: 1, cy: 1, r: 2.5 },
+    const gradient = node(radialGradient, {
+        attributes: { id: 'baseline', cx: 1 * scale, cy: 1 * scale, r: 2.5 * scale },
     });
 
-    let midStop = node(stop, {
+    const midStop = node(stop, {
         attributes: {
             offset: '0%',
-            'stop-color': styleVal(message, 'stopColor').color,
-            'stop-opacity': styleVal(message, 'stopColor').opacity,
+            'stop-color': styleVal(data, 'stopColor').color,
+            'stop-opacity': styleVal(data, 'stopColor').opacity,
         },
         classes: ['stop'],
     });
 
-    let endStop = node(stop, {
+    const endStop = node(stop, {
         attributes: {
             offset: '100%',
-            'stop-color': styleVal(message, 'endColor').color,
-            'stop-opacity': styleVal(message, 'endColor').opacity,
+            'stop-color': styleVal(data, 'endColor').color,
+            'stop-opacity': styleVal(data, 'endColor').opacity,
         },
         classes: ['stop'],
     });
@@ -139,13 +226,9 @@ function drawViz(message) {
     gradient.appendChild(midStop);
     gradient.appendChild(endStop);
 
-    // <style type="text/css">
-    //     @import url('https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic');
-    //  </style>
-
-    let roboto = node(svgStyle, {
+    const roboto = node(svgStyle, {
         attributes: { type: 'text/css' },
-        text: `@import url('https://fonts.googleapis.com/css?family=Roboto:300,300italic');`,
+        text: `@import url('https://fonts.googleapis.com/css?family=Roboto:200,300,300italic');`,
     });
 
     defs.appendChild(gradient);
@@ -154,17 +237,21 @@ function drawViz(message) {
     chart.append(defs);
 
     // if there is a greater than zero results set.
-    let conditional = node(g, { classes: ['conditional'] });
-    let quadBaseline = node(g, { classes: ['quad', 'baseline'] });
+    const conditional = node(g, { classes: ['conditional'] });
+    const quadBaseline = node(g, { classes: ['quad', 'baseline'] });
 
     graphData.forEach((quadrant, idx) => {
-        let quad = node(g, {
+        const quad = node(g, {
             attributes: { key: `quad_${idx}` },
             classes: ['quad'],
         });
 
-        let square = node(rect, {
+        const square = node(rect, {
             attributes: {
+                c1Id: C1.id,
+                c2Id: C2.id,
+                c1Type: C2.type,
+                c2Type: C2.type,
                 x: quadrant.x,
                 y: quadrant.y,
                 width: quadrant.size,
@@ -172,35 +259,102 @@ function drawViz(message) {
                 fill: style[quadrant.color].value.color,
             },
             classes: ['quadrant', quadrant.class.split(' ')],
+            handlers: [
+                {
+                    click: {
+                        fn: quadrantClick,
+                        context: quadrant.issues,
+                    },
+                },
+            ],
         });
 
-        let label = node(title, { text: `${quadrant.title} - ${quadrant.count}` });
+        const label = node(title, {
+            text: `${quadrant.title} - ${quadrant.count}`,
+        });
         square.appendChild(label);
         quad.appendChild(square);
         quadBaseline.appendChild(quad);
     });
 
     graphData.forEach((quadrant, idx) => {
-        let label = node(text, {
+        const label = node(text, {
             attributes: {
+                'pointer-events': 'none',
                 key: `text_${idx}`,
-                'data-position': 1 - quadrant.count / count(resultsMatrix),
+                'data-position': 1 - quadrant.count / count(),
                 x: quadrant.x + quadrant.size / 2,
                 y: quadrant.y + quadrant.size / 2,
-                dy: 0.05,
+                'dominant-baseline': 'middle',
+                dy: 0.0125 * scale,
+                'font-size': `${0.085 * scale}px`,
+                classes: ['count'],
             },
             classes: ['count', quadrant.class.split(' ')],
-            text: `${Math.sqrt(quadrant.count / count(resultsMatrix)) > 0.1 ? quadrant.count : ''}`,
+            text: `${Math.sqrt(quadrant.count / count()) > 0.1 ? quadrant.count : ''}`,
         });
         quadBaseline.appendChild(label);
     });
 
-    let total = node(text, {
-        attributes: { x: 1.75, y: 1.9 },
+    const total = node(text, {
+        attributes: {
+            x: (2 - 0.0125) * scale,
+            y: (2 - 0.0125) * scale,
+            'font-size': `${0.1 * scale}px`,
+        },
         classes: ['total', 'count'],
-        text: `${count(resultsMatrix) || ''}`,
+        text: `${count() || ''}`,
     });
+
+    const xAxis = node(line, {
+        attributes: {
+            x1: 0,
+            x2: 2 * scale,
+            y1: 1 * scale,
+            y2: 1 * scale,
+            stroke: '#222222',
+            'stroke-width': '0.125px',
+            'stroke-dasharray': '1 1 0.5 1',
+        },
+    });
+    const yAxis = node(line, {
+        attributes: {
+            y1: 0,
+            y2: 2 * scale,
+            x1: 1 * scale,
+            x2: 1 * scale,
+            stroke: '#222222',
+            'stroke-width': '0.125px',
+            'stroke-dasharray': '1 1 0.5 1',
+        },
+    });
+
+    const criteriaLabelX = node(text, {
+        text: C2.name,
+        classes: ['axes', 'x-axis'],
+        attributes: {
+            x: 0.0125 * scale,
+            y: 1.025 * scale,
+            'font-size': `${0.065 * scale}px`,
+            transform: `rotate(270 0, ${1 * scale})`,
+        },
+    });
+
+    const criteriaLabelY = node(text, {
+        text: C1.name,
+        classes: ['axes', 'y-axis'],
+        attributes: {
+            x: (1 - 0.025) * scale,
+            y: 0.0125 * scale,
+            'font-size': `${0.065 * scale}px`,
+        },
+    });
+
     quadBaseline.appendChild(total);
+    quadBaseline.appendChild(criteriaLabelX);
+    quadBaseline.appendChild(xAxis);
+    quadBaseline.appendChild(criteriaLabelY);
+    quadBaseline.appendChild(yAxis);
 
     conditional.appendChild(quadBaseline);
     chart.appendChild(conditional);
@@ -210,7 +364,7 @@ function drawViz(message) {
 
     // remove the svg if it already exists
     if (document.querySelector('svg')) {
-        let oldSvg = document.querySelector('svg');
+        const oldSvg = document.querySelector('svg');
         oldSvg.parentNode.replaceChild(documentFragment, oldSvg);
     } else {
         document.body.appendChild(documentFragment);
