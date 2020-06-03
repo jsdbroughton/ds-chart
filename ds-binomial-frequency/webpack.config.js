@@ -10,7 +10,7 @@ const plugins = [];
 let body = '<script src="main.js"></script>';
 if (fs.existsSync(cssFilePath)) {
   body = body + '\n<link rel="stylesheet" href="index.css">';
-  plugins.push(new CopyWebpackPlugin([{from: cssFilePath, to: '.'}]));
+  plugins.push(new CopyWebpackPlugin([{ from: cssFilePath, to: '.' }]));
 }
 const iframeHTML = `
 <!doctype html>
