@@ -1,0 +1,97 @@
+{
+  "data": [
+    {
+      "id": "data",
+      "label": "Data",
+      "elements": [
+        {
+          "id": "issueKey",
+          "label": "Jira Issue Keys",
+          "type": "DIMENSION",
+          "options": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        {
+          "id": "issueId",
+          "label": "Median IssueId",
+          "type": "METRIC",
+          "options": {
+            "min": 1,
+            "max": 1
+          }
+        }
+      ]
+    }
+  ],
+  "interactions": [],
+  "style": [
+    {
+      "id": "jiraConfig",
+      "label": "Jira Configuration",
+      "elements": [
+        {
+          "id": "rootUrl",
+          "label": "Jira Host Url",
+          "type": "TEXTINPUT",
+          "defaultValue": "https://jira.atlassian.net/"
+        },
+        {
+          "type": "CHECKBOX",
+          "id": "linkOn",
+          "label": "Link Mode On"
+        },
+        {
+          "id": "buttonMode",
+          "label": "Button Mode",
+          "type": "SELECT_RADIO",
+          "defaultValue": "total",
+          "options": [
+            {
+              "label": "Total",
+              "value": "total"
+            },
+            {
+              "label": "Page Link",
+              "value": "pageLink"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "label",
+      "label": "Label",
+      "elements": [
+        {
+          "type": "CHECKBOX",
+          "id": "overrideTheme",
+          "label": "Override Theme Settings"
+        },
+        {
+          "type": "FONT_SIZE",
+          "id": "fontSize",
+          "label": "Font Size",
+          "defaultValue": "12"
+        },
+        {
+          "type": "FONT_COLOR",
+          "id": "overrideColor",
+          "label": "Font Color",
+          "defaultValue": {
+            "color": "#000000"
+          }
+        },
+        {
+          "type": "FONT_COLOR",
+          "id": "linkColor",
+          "label": "Link Color",
+          "defaultValue": {
+            "color": "#660000"
+          }
+        }
+      ]
+    }
+  ]
+}

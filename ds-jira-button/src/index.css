@@ -1,0 +1,55 @@
+@import url(//fonts.googleapis.com/css?family=Roboto:500);
+
+body {
+	min-height: 90vh;
+	text-align: center;
+}
+
+span.jiraLink,
+a.jiraLink {
+	font-weight: 500;
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
+	display: inline-block;
+	line-height: calc(100vh-1px);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.gmat-button.mat-flat-button {
+	font-weight: 500;
+	font-family: Roboto;
+	letter-spacing: .25px;
+	box-sizing: border-box;
+	position: relative;
+	user-select: none;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	-webkit-tap-highlight-color: transparent;
+	display: inline-block;
+	white-space: nowrap;
+	text-decoration: none;
+	vertical-align: baseline;
+	text-align: center;
+	margin: 0;
+	padding: 0 16px;
+	border-radius: 4px;
+	overflow: visible;
+	background: #1a73e8;
+	color: #fff;
+	line-height: 36px;
+	min-width: 100%
+}
+
+.gmat-button.mat-flat-button.disabled,
+.gmat-button.mat-flat-button:disabled,
+.gmat-button.mat-flat-button.disabled:disabled {
+	cursor: default;
+}
+
+.gmat-button.mat-flat-button a {
+	text-decoration: none;
+}
