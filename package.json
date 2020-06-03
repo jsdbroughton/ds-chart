@@ -3,13 +3,7 @@
   "version": "1.0.0",
   "description": "A custom visualisation chart for use in Data Studio",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "concat": "cat dscc.min.js > viz.js; echo >> viz.js; cat chartSource.js >> viz.js",
-    "upload": "gsutil cp -a public-read manifest.json gs://ds-binomial-frequency-chart; gsutil cp -a public-read viz.* gs://ds-binomial-frequency-chart; gsutil cp -a public-read config.json gs://ds-binomial-frequency-chart",
-    "build": "npm run concat; npm run upload",
-    "format": "prettier --write '*.js'"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jsdbroughton/ds-binomial-frequency-chart.git"
@@ -19,13 +13,17 @@
     "visualisation"
   ],
   "author": "Jonathon Broughton - @jsdbroughton",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/jsdbroughton/ds-binomial-frequency-chart/issues"
   },
   "homepage": "https://github.com/jsdbroughton/ds-binomial-frequency-chart#readme",
-  "dependencies": {
-    "@google/dscc": "^0.3.17"
-  },
-  "devDependencies": {}
+  "devDependencies": {
+    "@google/dscc": "^0.3.17",
+    "@google/dscc-scripts": "^1.0.16",
+    "copy-webpack-plugin": "^4.6.0",
+    "eslint": "^7.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "prettier": "^2.0.5",
+    "webpack-dev-server": "^3.11.0"
+  }
 }
