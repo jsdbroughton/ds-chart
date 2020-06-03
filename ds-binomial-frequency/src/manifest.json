@@ -1,26 +1,26 @@
 {
-    "organizationUrl": "https://url",
-    "termsOfServiceUrl": "https://url",
-    "packageUrl": "https://url",
+  "organizationUrl": "https://url",
+  "termsOfServiceUrl": "https://url",
+  "packageUrl": "https://url",
 
-    "name": "Community Visualization",
-    "logoUrl": "https://raw.githubusercontent.com/googledatastudio/community-visualizations/master/docs/codelab/img/bar_chart.png",
-    "organization": "GRFN",
-    "supportUrl": "https://url",
-    "privacyPolicyUrl": "https://url",
-    "description": "Insights Components",
-    "devMode": "DEVMODE_BOOL",
-    "components": [
-        {
-            "id": "binomialChart",
-            "name": "Binomial Frequency Chart",
-            "iconUrl": "https://raw.githubusercontent.com/googledatastudio/community-visualizations/master/docs/codelab/img/bar_chart.png",
-            "description": "Binomial Frequency is the relative proportion of a dataset against two dimensions.",
-            "resource": {
-                "js": "YOUR_GCS_BUCKET/index.js",
-                "config": "YOUR_GCS_BUCKET/index.json",
-                "css": "YOUR_GCS_BUCKET/index.css"
-            }
-        }
-    ]
+  "name": "Community Visualization",
+  "logoUrl": "https://raw.githubusercontent.com/googledatastudio/community-visualizations/master/docs/codelab/img/bar_chart.png",
+  "organization": "GRFN",
+  "supportUrl": "https://url",
+  "privacyPolicyUrl": "https://url",
+  "description": "Insights Components",
+  "devMode": "DEVMODE_BOOL",
+  "components": [
+    {
+      "id": "binomialChart",
+      "name": "Binomial Frequency Chart",
+      "iconUrl": "https://raw.githubusercontent.com/googledatastudio/community-visualizations/master/docs/codelab/img/bar_chart.png",
+      "description": "Binomial Frequency is the relative proportion of a dataset against two dimensions.",
+      "resource": {
+        "js": "YOUR_GCS_BUCKET/index.js",
+        "config": "YOUR_GCS_BUCKET/index.json",
+        "css": "YOUR_GCS_BUCKET/index.css"
+      }
+    }
+  ]
 }
