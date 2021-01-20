@@ -1,8 +1,8 @@
 devDependencies:
-  '@google/dscc-scripts': 1.0.16
-lockfileVersion: 5.1
+  '@google/dscc-scripts': 1.0.17
+lockfileVersion: 5.2
 packages:
-  /@google/dscc-scripts/1.0.16:
+  /@google/dscc-scripts/1.0.17:
     dependencies:
       '@google/dscc': 0.3.17
       '@google/dscc-validation': 1.0.4
@@ -19,7 +19,7 @@ packages:
       terminal-link: 1.3.0
       ts-loader: 7.0.5_typescript@3.9.3
       typescript: 3.9.3
-      webpack: 4.43.0_webpack@4.43.0
+      webpack: 4.43.0
       webpack-cli: 3.3.11_webpack@4.43.0
       webpack-dev-server: 3.11.0_6bb071789035dbb53b131cf2ad63510b
       webpack-merge: 4.2.2
@@ -30,7 +30,7 @@ packages:
       npm: '>=5.2.0'
     hasBin: true
     resolution:
-      integrity: sha512-l0bm3O7zLdTdoKKrhkQQXd4JTglCg8rmjiVAKygb0WYYdR34uEo1zluOnN/zZpdqu4x31KuoT6WCmoVn+SxOkQ==
+      integrity: sha512-q0DDEfzRenwLIcHAMWHNMRxIK4ldtPN2CM+uWRCUZFJD6Gpylglucl5rnJ2r62z7Fv7M6XHkG74cu0w9AaF/gw==
   /@google/dscc-validation/1.0.4:
     dependencies:
       ajv: 6.12.2
@@ -1007,12 +1007,14 @@ packages:
   /debug/3.2.6:
     dependencies:
       ms: 2.1.2
+    deprecated: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
     dev: true
     resolution:
       integrity: sha512-mel+jf7nrtEl5Pn1Qx46zARXKDpBbvzezse7p7LqINmdoIk8PYP5SySaxEmYv6TZ0JyEKA1hsCId6DIhgITtWQ==
   /debug/4.1.1:
     dependencies:
       ms: 2.1.2
+    deprecated: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
     dev: true
     resolution:
       integrity: sha512-pYAIzeRo8J6KPEaJ0VWOh5Pzkbw/RetuzehGM7QRRX5he4fPHx2rdKMB256ehJCkX+XRQm16eZLqLNS8RSZXZw==
@@ -1462,7 +1464,7 @@ packages:
       integrity: sha512-lhd/wF+Lk98HZoTCtlVraHtfh5XYijIjalXck7saUtuanSDyLMxnHhSXEDJqHxD7msR8D0uCmqlkwjCV8xvwHw==
   /faye-websocket/0.10.0:
     dependencies:
-      websocket-driver: 0.6.5
+      websocket-driver: 0.7.4
     dev: true
     engines:
       node: '>=0.4.0'
@@ -1641,6 +1643,7 @@ packages:
     resolution:
       integrity: sha512-oWb1Z6mkHIskLzEJ/XWX0srkpkTQ7vaopMQkyaEIoq0fmtFVxOthb8cCxeT+p3ynTdkk/RZwbgG4brR5BeWECw==
   /fsevents/2.1.3:
+    deprecated: '"Please update to latest v2.3 or v2.2"'
     dev: true
     engines:
       node: ^8.16.0 || ^10.6.0 || >=11.0.0
@@ -2033,6 +2036,7 @@ packages:
     resolution:
       integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
   /ini/1.3.5:
+    deprecated: Please update to ini >=1.3.6 to avoid a prototype pollution issue
     dev: true
     resolution:
       integrity: sha512-RZY5huIKCMRWDUqZlEi72f/lmXKMvuszcMBduliQ3nnWbx9X/ZBQO7DijMEYS9EhHBb2qacRUMtC7svLwe0lcw==
@@ -2620,7 +2624,7 @@ packages:
     dependencies:
       loader-utils: 1.4.0
       schema-utils: 1.0.0
-      webpack: 4.43.0_webpack@4.43.0
+      webpack: 4.43.0
       webpack-sources: 1.4.3
     dev: true
     engines:
@@ -3478,7 +3482,7 @@ packages:
     resolution:
       integrity: sha1-six699nWiBvItuZTM17rywoYh0g=
   /resolve-url/0.2.1:
-    deprecated: 'https://github.com/lydell/resolve-url#deprecated'
+    deprecated: https://github.com/lydell/resolve-url#deprecated
     dev: true
     resolution:
       integrity: sha1-LGN/53yJOv0qZj/iGqkIAGjiBSo=
@@ -3980,7 +3984,7 @@ packages:
       serialize-javascript: 2.1.2
       source-map: 0.6.1
       terser: 4.7.0
-      webpack: 4.43.0_webpack@4.43.0
+      webpack: 4.43.0
       webpack-sources: 1.4.3
       worker-farm: 1.7.0
     dev: true
@@ -4174,7 +4178,7 @@ packages:
     resolution:
       integrity: sha512-KY9Frmirql91X2Qgjry0Wd4Y+YTdrdZheS8TFwvkbLWf/G5KNJDCh6pKL5OZctEW4+0Baa5idK2ZQuELRwPznQ==
   /urix/0.1.0:
-    deprecated: 'Please see https://github.com/lydell/urix#deprecated'
+    deprecated: Please see https://github.com/lydell/urix#deprecated
     dev: true
     resolution:
       integrity: sha1-2pN/emLiH+wf0Y1Js1wpNQZ6bHI=
@@ -4276,7 +4280,7 @@ packages:
       loader-utils: 1.2.3
       supports-color: 6.1.0
       v8-compile-cache: 2.0.3
-      webpack: 4.43.0_webpack@4.43.0
+      webpack: 4.43.0
       yargs: 13.2.4
     dev: true
     engines:
@@ -4292,7 +4296,7 @@ packages:
       mime: 2.4.6
       mkdirp: 0.5.5
       range-parser: 1.2.1
-      webpack: 4.43.0_webpack@4.43.0
+      webpack: 4.43.0
       webpack-log: 2.0.0
     dev: true
     engines:
@@ -4332,7 +4336,7 @@ packages:
       strip-ansi: 3.0.1
       supports-color: 6.1.0
       url: 0.11.0
-      webpack: 4.43.0_webpack@4.43.0
+      webpack: 4.43.0
       webpack-cli: 3.3.11_webpack@4.43.0
       webpack-dev-middleware: 3.7.2_webpack@4.43.0
       webpack-log: 2.0.0
@@ -4378,7 +4382,7 @@ packages:
     dev: true
     resolution:
       integrity: sha512-lgTS3Xhv1lCOKo7SA5TjKXMjpSM4sBjNV5+q2bqesbSPs5FjGmU6jjtBSkX9b4qW87vDIsCIlUPOEhbZrMdjeQ==
-  /webpack/4.43.0_webpack@4.43.0:
+  /webpack/4.43.0:
     dependencies:
       '@webassemblyjs/ast': 1.9.0
       '@webassemblyjs/helper-module-context': 1.9.0
@@ -4407,8 +4411,6 @@ packages:
     engines:
       node: '>=6.11.5'
     hasBin: true
-    peerDependencies:
-      webpack: '*'
     resolution:
       integrity: sha512-GW1LjnPipFW2Y78OOab8NJlCflB7EFskMih2AHdvjbpKMeDJqEgSx24cXXXiPS65+WSwVyxtDsJH6jGX2czy+g==
   /websocket-driver/0.6.5:
@@ -4529,4 +4531,4 @@ packages:
     resolution:
       integrity: sha512-AX3Zw5iPruN5ie6xGRIDgqkT+ZhnRlZMLMHAs8tg7nRruy2Nb+i5o9bwghAogtM08q1dpr2LVoS8KSTMYpWXUw==
 specifiers:
-  '@google/dscc-scripts': ^1.0.16
+  '@google/dscc-scripts': 1.0.17
