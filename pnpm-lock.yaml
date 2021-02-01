@@ -2757,7 +2757,7 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-aKS4WQjPenRxiQsC93MNfjx+nbF4PAdYzmd/1JIj8HYzqfbu86beTuNgXDzPknWk0n0uARlyewZo4s++ES36Ow==
-  /json5/2.1.3:
+  /json5/2.2.0:
     dependencies:
       minimist: 1.2.5
     dev: true
@@ -2765,7 +2765,7 @@ packages:
       node: '>=6'
     hasBin: true
     resolution:
-      integrity: sha512-KXPvOm8K9IJKFM0bmdn8QXh7udDh1g/giieX0NLCaMnb4hEiVFqnop2ImTXCc5e0/oHz3LTqmHGtExn5hfMkOA==
+      integrity: sha512-f+8cldu7X/y7RAJurMEJmdoKXGB/X550w2Nr3tTbezL6RwEE/iMcm+tZnXeoZtKuOq6ft8+CqzEkrIgx1fPoQA==
   /killable/1.0.1:
     dev: true
     resolution:
@@ -2827,7 +2827,7 @@ packages:
     dependencies:
       big.js: 5.2.2
       emojis-list: 3.0.0
-      json5: 2.1.3
+      json5: 2.2.0
     dev: true
     engines:
       node: '>=8.9.0'
