@@ -2,8 +2,8 @@ devDependencies:
   '@google/dscc': 0.3.17
   '@google/dscc-scripts': 1.0.17
   copy-webpack-plugin: 7.0.0
-  eslint: 7.20.0
-  eslint-config-prettier: 8.1.0_eslint@7.20.0
+  eslint: 7.21.0
+  eslint-config-prettier: 8.1.0_eslint@7.21.0
   prettier: 2.2.1
   webpack-dev-server: 3.11.2
 lockfileVersion: 5.2
@@ -26,7 +26,7 @@ packages:
     dev: true
     resolution:
       integrity: sha512-kocDQvIbgMKlWxXe9fof3TQ+gkIPOUSEYhJjqUjvKMez3krV7vbzYCDq39Oj11UAVK7JqPVGQPlgE85dPNlQww==
-  /@eslint/eslintrc/0.3.0:
+  /@eslint/eslintrc/0.4.0:
     dependencies:
       ajv: 6.12.6
       debug: 4.3.1
@@ -35,14 +35,13 @@ packages:
       ignore: 4.0.6
       import-fresh: 3.3.0
       js-yaml: 3.14.1
-      lodash: 4.17.21
       minimatch: 3.0.4
       strip-json-comments: 3.1.1
     dev: true
     engines:
       node: ^10.12.0 || >=12.0.0
     resolution:
-      integrity: sha512-1JTKgrOKAHVivSvOYw+sJOunkBjUOvjqWk1DPja7ZFhIS2mX/4EgTT8M7eTK9jrKhL/FvXXEbQwIs3pg1xp3dg==
+      integrity: sha512-2ZPCc+uNbjV5ERJr+aKSPRwZgKd2z11x0EgLvb1PURmUrn9QNRXFqje0Ldq454PfAVyaJYyrDvvIKSFP4NnBog==
   /@google/dscc-scripts/1.0.17:
     dependencies:
       '@google/dscc': 0.3.17
@@ -1477,9 +1476,9 @@ packages:
       node: '>=0.8.0'
     resolution:
       integrity: sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
-  /eslint-config-prettier/8.1.0_eslint@7.20.0:
+  /eslint-config-prettier/8.1.0_eslint@7.21.0:
     dependencies:
-      eslint: 7.20.0
+      eslint: 7.21.0
     dev: true
     hasBin: true
     peerDependencies:
@@ -1524,10 +1523,10 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-QudtT6av5WXels9WjIM7qz1XD1cWGvX4gGXvp/zBn9nXG02D0utdU3Em2m/QjTnrsk6bBjmCygl3rmj118msQQ==
-  /eslint/7.20.0:
+  /eslint/7.21.0:
     dependencies:
       '@babel/code-frame': 7.12.11
-      '@eslint/eslintrc': 0.3.0
+      '@eslint/eslintrc': 0.4.0
       ajv: 6.12.6
       chalk: 4.1.0
       cross-spawn: 7.0.3
@@ -1568,7 +1567,7 @@ packages:
       node: ^10.12.0 || >=12.0.0
     hasBin: true
     resolution:
-      integrity: sha512-qGi0CTcOGP2OtCQBgWZlQjcTuP0XkIpYFj25XtRTQSHC+umNnp7UMshr2G8SLsRFYDdAPFeHOsiteadmMH02Yw==
+      integrity: sha512-W2aJbXpMNofUp0ztQaF40fveSsJBjlSCSWpy//gzfTvwC+USs/nceBrKmlJOiM8r1bLwP2EuYkCqArn/6QTIgg==
   /espree/7.3.1:
     dependencies:
       acorn: 7.4.1
@@ -5168,7 +5167,7 @@ specifiers:
   '@google/dscc': 0.3.17
   '@google/dscc-scripts': 1.0.17
   copy-webpack-plugin: 7.0.0
-  eslint: 7.20.0
+  eslint: 7.21.0
   eslint-config-prettier: 8.1.0
   prettier: 2.2.1
   webpack-dev-server: 3.11.2
