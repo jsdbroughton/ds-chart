@@ -1,7 +1,7 @@
 devDependencies:
   '@google/dscc': 0.3.17
   '@google/dscc-scripts': 1.0.17
-  copy-webpack-plugin: 7.0.0
+  copy-webpack-plugin: 8.0.0
 lockfileVersion: 5.2
 packages:
   /@google/dscc-scripts/1.0.17:
@@ -962,12 +962,11 @@ packages:
       node: '>= 4'
     resolution:
       integrity: sha512-Y+SQCF+0NoWQryez2zXn5J5knmr9z/9qSQt7fbL78u83rxmigOy8X5+BFn8CFSuX+nKT8gpYwJX68ekqtQt6ZA==
-  /copy-webpack-plugin/7.0.0:
+  /copy-webpack-plugin/8.0.0:
     dependencies:
       fast-glob: 3.2.5
       glob-parent: 5.1.1
       globby: 11.0.2
-      loader-utils: 2.0.0
       normalize-path: 3.0.0
       p-limit: 3.1.0
       schema-utils: 3.0.0
@@ -978,7 +977,7 @@ packages:
     peerDependencies:
       webpack: ^5.1.0
     resolution:
-      integrity: sha512-SLjQNa5iE3BoCP76ESU9qYo9ZkEWtXoZxDurHoqPchAFRblJ9g96xTeC560UXBMre1Nx6ixIIUfiY3VcjpJw3g==
+      integrity: sha512-sqGe2FsB67wV/De+sz5azQklADe4thN016od6m7iK9KbjrSc1SEgg5QZ0LN+jGx5aZR52CbuXbqOhoIbqzzXlA==
   /core-util-is/1.0.2:
     dev: true
     resolution:
@@ -2412,15 +2411,6 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-aKS4WQjPenRxiQsC93MNfjx+nbF4PAdYzmd/1JIj8HYzqfbu86beTuNgXDzPknWk0n0uARlyewZo4s++ES36Ow==
-  /json5/2.2.0:
-    dependencies:
-      minimist: 1.2.5
-    dev: true
-    engines:
-      node: '>=6'
-    hasBin: true
-    resolution:
-      integrity: sha512-f+8cldu7X/y7RAJurMEJmdoKXGB/X550w2Nr3tTbezL6RwEE/iMcm+tZnXeoZtKuOq6ft8+CqzEkrIgx1fPoQA==
   /killable/1.0.1:
     dev: true
     resolution:
@@ -2469,16 +2459,6 @@ packages:
       node: '>=4.0.0'
     resolution:
       integrity: sha512-qH0WSMBtn/oHuwjy/NucEgbx5dbxxnxup9s4PVXJUDHZBQY+s0NWA9rJf53RBnQZxfch7euUui7hpoAPvALZdA==
-  /loader-utils/2.0.0:
-    dependencies:
-      big.js: 5.2.2
-      emojis-list: 3.0.0
-      json5: 2.2.0
-    dev: true
-    engines:
-      node: '>=8.9.0'
-    resolution:
-      integrity: sha512-rP4F0h2RaWSvPEkD7BLDFQnvSf+nK+wr3ESUjNTyAGobqrijmW92zc+SO6d4p4B1wh7+B/Jg1mkQe5NYUEHtHQ==
   /locate-path/2.0.0:
     dependencies:
       p-locate: 2.0.0
@@ -4555,4 +4535,4 @@ packages:
 specifiers:
   '@google/dscc': 0.3.17
   '@google/dscc-scripts': 1.0.17
-  copy-webpack-plugin: 7.0.0
+  copy-webpack-plugin: 8.0.0
