@@ -1,7 +1,7 @@
 devDependencies:
   '@google/dscc': 0.3.17
   '@google/dscc-scripts': 1.0.17
-  copy-webpack-plugin: 8.0.0
+  copy-webpack-plugin: 8.1.0
   eslint: 7.22.0
   eslint-config-prettier: 8.1.0_eslint@7.22.0
   prettier: 2.2.1
@@ -1077,11 +1077,11 @@ packages:
       node: '>= 4'
     resolution:
       integrity: sha512-Y+SQCF+0NoWQryez2zXn5J5knmr9z/9qSQt7fbL78u83rxmigOy8X5+BFn8CFSuX+nKT8gpYwJX68ekqtQt6ZA==
-  /copy-webpack-plugin/8.0.0:
+  /copy-webpack-plugin/8.1.0:
     dependencies:
       fast-glob: 3.2.5
       glob-parent: 5.1.2
-      globby: 11.0.2
+      globby: 11.0.3
       normalize-path: 3.0.0
       p-limit: 3.1.0
       schema-utils: 3.0.0
@@ -1092,7 +1092,7 @@ packages:
     peerDependencies:
       webpack: ^5.1.0
     resolution:
-      integrity: sha512-sqGe2FsB67wV/De+sz5azQklADe4thN016od6m7iK9KbjrSc1SEgg5QZ0LN+jGx5aZR52CbuXbqOhoIbqzzXlA==
+      integrity: sha512-Soiq8kXI2AZkpw3dSp18u6oU2JonC7UKv3UdXsKOmT1A5QT46ku9+6c0Qy29JDbSavQJNN1/eKGpd3QNw+cZWg==
   /core-util-is/1.0.2:
     dev: true
     resolution:
@@ -2110,7 +2110,7 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-Aipsz6ZKRxa/xQkZhNg0qIWXT6x6rD46f6x/PCnBomlttdIyAPak4YD9jTmKpZ72uROSMU87qJtcgpgHaVchiA==
-  /globby/11.0.2:
+  /globby/11.0.3:
     dependencies:
       array-union: 2.1.0
       dir-glob: 3.0.1
@@ -2122,7 +2122,7 @@ packages:
     engines:
       node: '>=10'
     resolution:
-      integrity: sha512-2ZThXDvvV8fYFRVIxnrMQBipZQDr7MxKAmQK1vujaj9/7eF0efG7BPUKJ7jP7G5SLF37xKDXvO4S/KKLj/Z0og==
+      integrity: sha512-ffdmosjA807y7+lA1NM0jELARVmYul/715xiILEjo3hBLPTcirgQNnXECn5g3mtR8TOLCVbkfua1Hpen25/Xcg==
   /globby/6.1.0:
     dependencies:
       array-union: 1.0.2
@@ -5160,7 +5160,7 @@ packages:
 specifiers:
   '@google/dscc': 0.3.17
   '@google/dscc-scripts': 1.0.17
-  copy-webpack-plugin: 8.0.0
+  copy-webpack-plugin: 8.1.0
   eslint: 7.22.0
   eslint-config-prettier: 8.1.0
   prettier: 2.2.1
