@@ -4,7 +4,7 @@ specifiers:
   '@google/dscc': 0.3.17
   '@google/dscc-scripts': 1.0.17
   copy-webpack-plugin: 8.1.1
-  eslint: 7.23.0
+  eslint: 7.24.0
   eslint-config-prettier: 8.1.0
   prettier: 2.2.1
   webpack-dev-server: 3.11.2
@@ -13,8 +13,8 @@ devDependencies:
   '@google/dscc': 0.3.17
   '@google/dscc-scripts': 1.0.17
   copy-webpack-plugin: 8.1.1
-  eslint: 7.23.0
-  eslint-config-prettier: 8.1.0_eslint@7.23.0
+  eslint: 7.24.0
+  eslint-config-prettier: 8.1.0_eslint@7.24.0
   prettier: 2.2.1
   webpack-dev-server: 3.11.2
 
@@ -1405,13 +1405,13 @@ packages:
     engines: {node: '>=0.8.0'}
     dev: true
 
-  /eslint-config-prettier/8.1.0_eslint@7.23.0:
+  /eslint-config-prettier/8.1.0_eslint@7.24.0:
     resolution: {integrity: sha512-oKMhGv3ihGbCIimCAjqkdzx2Q+jthoqnXSP+d86M9tptwugycmTFdVR4IpLgq2c4SHifbwO90z2fQ8/Aio73yw==}
     hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
     dependencies:
-      eslint: 7.23.0
+      eslint: 7.24.0
     dev: true
 
   /eslint-scope/4.0.3:
@@ -1447,8 +1447,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /eslint/7.23.0:
-    resolution: {integrity: sha512-kqvNVbdkjzpFy0XOszNwjkKzZ+6TcwCQ/h+ozlcIWwaimBBuhlQ4nN6kbiM2L+OjDcznkTJxzYfRFH92sx4a0Q==}
+  /eslint/7.24.0:
+    resolution: {integrity: sha512-k9gaHeHiFmGCDQ2rEfvULlSLruz6tgfA8DEn+rY9/oYPFFTlz55mM/Q/Rij1b2Y42jwZiK3lXvNTw6w6TXzcKQ==}
     engines: {node: ^10.12.0 || >=12.0.0}
     hasBin: true
     dependencies:
