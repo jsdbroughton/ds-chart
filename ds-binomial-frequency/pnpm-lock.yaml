@@ -3,12 +3,12 @@ lockfileVersion: 5.3
 specifiers:
   '@google/dscc': 0.3.17
   '@google/dscc-scripts': 1.0.17
-  copy-webpack-plugin: 8.1.1
+  copy-webpack-plugin: 9.0.0
 
 devDependencies:
   '@google/dscc': 0.3.17
   '@google/dscc-scripts': 1.0.17
-  copy-webpack-plugin: 8.1.1
+  copy-webpack-plugin: 9.0.0
 
 packages:
 
@@ -919,14 +919,14 @@ packages:
       serialize-javascript: 1.9.1
     dev: true
 
-  /copy-webpack-plugin/8.1.1:
-    resolution: {integrity: sha512-rYM2uzRxrLRpcyPqGceRBDpxxUV8vcDqIKxAUKfcnFpcrPxT5+XvhTxv7XLjo5AvEJFPdAE3zCogG2JVahqgSQ==}
-    engines: {node: '>= 10.13.0'}
+  /copy-webpack-plugin/9.0.0:
+    resolution: {integrity: sha512-k8UB2jLIb1Jip2nZbCz83T/XfhfjX6mB1yLJNYKrpYi7FQimfOoFv/0//iT6HV1K8FwUB5yUbCcnpLebJXJTug==}
+    engines: {node: '>= 12.13.0'}
     peerDependencies:
       webpack: ^5.1.0
     dependencies:
       fast-glob: 3.2.5
-      glob-parent: 5.1.2
+      glob-parent: 6.0.0
       globby: 11.0.3
       normalize-path: 3.0.0
       p-limit: 3.1.0
@@ -1638,6 +1638,13 @@ packages:
   /glob-parent/5.1.2:
     resolution: {integrity: sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==}
     engines: {node: '>= 6'}
+    dependencies:
+      is-glob: 4.0.1
+    dev: true
+
+  /glob-parent/6.0.0:
+    resolution: {integrity: sha512-Hdd4287VEJcZXUwv1l8a+vXC1GjOQqXe+VS30w/ypihpcnu9M1n3xeYeJu5CBpeEQj2nAab2xxz28GuA3vp4Ww==}
+    engines: {node: '>=10.13.0'}
     dependencies:
       is-glob: 4.0.1
     dev: true

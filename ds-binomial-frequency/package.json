@@ -20,6 +20,6 @@
   "devDependencies": {
     "@google/dscc": "0.3.17",
     "@google/dscc-scripts": "1.0.17",
-    "copy-webpack-plugin": "8.1.1"
+    "copy-webpack-plugin": "9.0.0"
   }
 }
