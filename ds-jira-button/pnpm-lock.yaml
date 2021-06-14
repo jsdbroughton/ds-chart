@@ -13,7 +13,7 @@ packages:
     engines: {node: '>=7.10.0', npm: '>=5.2.0'}
     hasBin: true
     dependencies:
-      '@google/dscc': 0.3.17
+      '@google/dscc': 0.3.21
       '@google/dscc-validation': 1.0.4
       argparse: 1.0.10
       bluebird: 3.7.2
@@ -44,23 +44,23 @@ packages:
       typescript: 3.9.9
     dev: true
 
-  /@google/dscc/0.3.17:
-    resolution: {integrity: sha512-NvLkgbfucNLK/2x2dNYSvNmea+ckh3dc09SphtboGVvqpJ2TMXhycvRMz7uMHAlcMvI2ukZbKAF6qvKUYoBGNA==}
+  /@google/dscc/0.3.21:
+    resolution: {integrity: sha512-ljaOO5a22g8VoCPfeXHwVLau1/0jkZyxM8VcePV6RXFJnoGt3f1v22urZhkjbPAgbILilzek77DEyXgjZ9xDvQ==}
     dev: true
 
   /@types/glob/7.1.3:
     resolution: {integrity: sha512-SEYeGAIQIQX8NN6LDKprLjbrd5dARM5EXsd8GI/A5l0apYI1fGMWgPHSe4ZKL4eozlAyI+doUE9XbYS4xCkQ1w==}
     dependencies:
       '@types/minimatch': 3.0.4
-      '@types/node': 15.12.1
+      '@types/node': 15.12.2
     dev: true
 
   /@types/minimatch/3.0.4:
     resolution: {integrity: sha512-1z8k4wzFnNjVK/tlxvrWuK5WMt6mydWWP7+zvH5eFep4oj+UkrfiJTRtjCeBXNpwaA/FYqqtb4/QS4ianFpIRA==}
     dev: true
 
-  /@types/node/15.12.1:
-    resolution: {integrity: sha512-zyxJM8I1c9q5sRMtVF+zdd13Jt6RU4r4qfhTd7lQubyThvLfx6yYekWSQjGCGV2Tkecgxnlpl/DNlb6Hg+dmEw==}
+  /@types/node/15.12.2:
+    resolution: {integrity: sha512-zjQ69G564OCIWIOHSXyQEEDpdpGl+G348RAKY0XXy9Z5kU9Vzv1GMNnkar/ZJ8dzXB3COzD9Mo9NtRZ4xfgUww==}
     dev: true
 
   /@webassemblyjs/ast/1.9.0:
@@ -2878,13 +2878,13 @@ packages:
     engines: {node: '>= 6'}
     dependencies:
       loader-utils: 1.4.0
-      postcss: 7.0.35
+      postcss: 7.0.36
       postcss-load-config: 2.1.2
       schema-utils: 1.0.0
     dev: true
 
-  /postcss/7.0.35:
-    resolution: {integrity: sha512-3QT8bBJeX/S5zKTTjTCIjRF3If4avAT6kqxcASlTWEtAFCb9NH0OUxNDfgZSWdP5fJnBYCMEWkIFfWeugjzYMg==}
+  /postcss/7.0.36:
+    resolution: {integrity: sha512-BebJSIUMwJHRH0HAQoxN4u1CN86glsrwsW0q7T+/m44eXOUAxSNdHRkNZPYz5vVUbg17hFgOQDE7fZk7li3pZw==}
     engines: {node: '>=6.0.0'}
     dependencies:
       chalk: 2.4.2
