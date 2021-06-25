@@ -3,7 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@google/dscc': 0.3.21
   '@google/dscc-scripts': 1.0.17
-  copy-webpack-plugin: 9.0.0
+  copy-webpack-plugin: 9.0.1
   eslint: 7.29.0
   eslint-config-prettier: 8.3.0
   prettier: 2.3.1
@@ -12,7 +12,7 @@ specifiers:
 devDependencies:
   '@google/dscc': 0.3.21
   '@google/dscc-scripts': 1.0.17
-  copy-webpack-plugin: 9.0.0
+  copy-webpack-plugin: 9.0.1
   eslint: 7.29.0
   eslint-config-prettier: 8.3.0_eslint@7.29.0
   prettier: 2.3.1
@@ -1033,8 +1033,8 @@ packages:
       serialize-javascript: 1.9.1
     dev: true
 
-  /copy-webpack-plugin/9.0.0:
-    resolution: {integrity: sha512-k8UB2jLIb1Jip2nZbCz83T/XfhfjX6mB1yLJNYKrpYi7FQimfOoFv/0//iT6HV1K8FwUB5yUbCcnpLebJXJTug==}
+  /copy-webpack-plugin/9.0.1:
+    resolution: {integrity: sha512-14gHKKdYIxF84jCEgPgYXCPpldbwpxxLbCmA7LReY7gvbaT555DgeBWBgBZM116tv/fO6RRJrsivBqRyRlukhw==}
     engines: {node: '>= 12.13.0'}
     peerDependencies:
       webpack: ^5.1.0
@@ -1045,7 +1045,7 @@ packages:
       normalize-path: 3.0.0
       p-limit: 3.1.0
       schema-utils: 3.0.0
-      serialize-javascript: 5.0.1
+      serialize-javascript: 6.0.0
     dev: true
 
   /core-util-is/1.0.2:
@@ -3799,8 +3799,8 @@ packages:
       randombytes: 2.1.0
     dev: true
 
-  /serialize-javascript/5.0.1:
-    resolution: {integrity: sha512-SaaNal9imEO737H2c05Og0/8LUXG7EnsZyMa8MzkmuHoELfT6txuj0cMqRj6zfPKnmQ1yasR4PCJc8x+M4JSPA==}
+  /serialize-javascript/6.0.0:
+    resolution: {integrity: sha512-Qr3TosvguFt8ePWqsvRfrKyQXIiW+nGbYpy8XK24NQHE83caxWt+mIymTT19DGFbNWNLfEwsrkSmN64lVWB9ag==}
     dependencies:
       randombytes: 2.1.0
     dev: true
