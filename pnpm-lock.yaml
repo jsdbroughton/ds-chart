@@ -26,8 +26,8 @@ packages:
       '@babel/highlight': 7.14.5
     dev: true
 
-  /@babel/helper-validator-identifier/7.14.5:
-    resolution: {integrity: sha512-5lsetuxCLilmVGyiLEfoHBRX8UCFD+1m2x3Rj97WrW3V7H3u4RWRXA4evMjImCsin2J2YT0QaVDGf+z8ondbAg==}
+  /@babel/helper-validator-identifier/7.14.8:
+    resolution: {integrity: sha512-ZGy6/XQjllhYQrNw/3zfWRwZCTVSiBLZ9DHVZxn9n2gip/7ab8mv2TWlKPIBk26RwedCBoWdjLmn+t9na2Gcow==}
     engines: {node: '>=6.9.0'}
     dev: true
 
@@ -35,7 +35,7 @@ packages:
     resolution: {integrity: sha512-qf9u2WFWVV0MppaL877j2dBtQIDgmidgjGk5VIMw3OadXvYaXn66U1BFlH2t4+t3i+8PhedppRv+i40ABzd+gg==}
     engines: {node: '>=6.9.0'}
     dependencies:
-      '@babel/helper-validator-identifier': 7.14.5
+      '@babel/helper-validator-identifier': 7.14.8
       chalk: 2.4.2
       js-tokens: 4.0.0
     dev: true
@@ -137,7 +137,7 @@ packages:
     resolution: {integrity: sha512-w+LsMxKyYQm347Otw+IfBXOv9UWVjpHpCDdbBMt8Kz/xbvCYNjP+0qPh91Km3iKfSRLBB0P7fAMf0KHrPu+MyA==}
     dependencies:
       '@types/minimatch': 3.0.5
-      '@types/node': 16.3.3
+      '@types/node': 16.4.3
     dev: true
 
   /@types/json-schema/7.0.8:
@@ -148,8 +148,8 @@ packages:
     resolution: {integrity: sha512-Klz949h02Gz2uZCMGwDUSDS1YBlTdDDgbWHi+81l29tQALUtvz4rAYi5uoVhE5Lagoq6DeqAUlbrHvW/mXDgdQ==}
     dev: true
 
-  /@types/node/16.3.3:
-    resolution: {integrity: sha512-8h7k1YgQKxKXWckzFCMfsIwn0Y61UK6tlD6y2lOb3hTOIMlK3t9/QwHOhc81TwU+RMf0As5fj7NPjroERCnejQ==}
+  /@types/node/16.4.3:
+    resolution: {integrity: sha512-GKM4FLMkWDc0sfx7tXqPWkM6NBow1kge0fgQh0bOnlqo4iT1kvTvMEKE0c1RtUGnbLlGRXiAA8SumE//90uKAg==}
     dev: true
 
   /@webassemblyjs/ast/1.9.0:
@@ -1055,11 +1055,11 @@ packages:
       webpack: ^5.1.0
     dependencies:
       fast-glob: 3.2.7
-      glob-parent: 6.0.0
+      glob-parent: 6.0.1
       globby: 11.0.4
       normalize-path: 3.0.0
       p-limit: 3.1.0
-      schema-utils: 3.1.0
+      schema-utils: 3.1.1
       serialize-javascript: 6.0.0
     dev: true
 
@@ -1949,8 +1949,8 @@ packages:
       is-glob: 4.0.1
     dev: true
 
-  /glob-parent/6.0.0:
-    resolution: {integrity: sha512-Hdd4287VEJcZXUwv1l8a+vXC1GjOQqXe+VS30w/ypihpcnu9M1n3xeYeJu5CBpeEQj2nAab2xxz28GuA3vp4Ww==}
+  /glob-parent/6.0.1:
+    resolution: {integrity: sha512-kEVjS71mQazDBHKcsq4E9u/vUzaLcw1A8EtUeydawvIWQCJM0qQ08G1H7/XTjFUulla6XQiDOG6MXSaG0HDKog==}
     engines: {node: '>=10.13.0'}
     dependencies:
       is-glob: 4.0.1
@@ -3143,7 +3143,7 @@ packages:
   /original/1.0.2:
     resolution: {integrity: sha512-hyBVl6iqqUOJ8FqRe+l/gS8H+kKYjrEndd5Pm1MfBtsEKA038HkkdbAl/72EAXGyonD/PFsvmVG+EvcIpliMBg==}
     dependencies:
-      url-parse: 1.5.1
+      url-parse: 1.5.3
     dev: true
 
   /os-browserify/0.3.0:
@@ -3749,8 +3749,8 @@ packages:
       ajv-keywords: 3.5.2_ajv@6.12.6
     dev: true
 
-  /schema-utils/3.1.0:
-    resolution: {integrity: sha512-tTEaeYkyIhEZ9uWgAjDerWov3T9MgX8dhhy2r0IGeeX4W8ngtGl1++dUve/RUqzuaASSh7shwCDJjEzthxki8w==}
+  /schema-utils/3.1.1:
+    resolution: {integrity: sha512-Y5PQxS4ITlC+EahLuXaY86TXfR7Dc5lw294alXOq86JAHCihAIZfqv8nNCWvaEJvaC51uN9hbLGeV0cFBdH+Fw==}
     engines: {node: '>= 10.13.0'}
     dependencies:
       '@types/json-schema': 7.0.8
@@ -3963,7 +3963,7 @@ packages:
       faye-websocket: 0.11.4
       inherits: 2.0.4
       json3: 3.3.3
-      url-parse: 1.5.1
+      url-parse: 1.5.3
     dev: true
 
   /sockjs/0.3.21:
@@ -4417,8 +4417,8 @@ packages:
     deprecated: Please see https://github.com/lydell/urix#deprecated
     dev: true
 
-  /url-parse/1.5.1:
-    resolution: {integrity: sha512-HOfCOUJt7iSYzEx/UqgtwKRMC6EU91NFhsCHMv9oM03VJcVo2Qrp8T8kI9D7amFf1cu+/3CEhgb3rF9zL7k85Q==}
+  /url-parse/1.5.3:
+    resolution: {integrity: sha512-IIORyIQD9rvj0A4CLWsHkBBJuNqWpFQe224b6j9t/ABmquIS0qDU2pY6kl6AuOrL5OkCXHMCFNe1jBcuAggjvQ==}
     dependencies:
       querystringify: 2.2.0
       requires-port: 1.0.0
