@@ -1,12 +1,12 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@google/dscc': 0.3.21
+  '@google/dscc': 0.3.22
   '@google/dscc-scripts': 1.0.17
   copy-webpack-plugin: 9.0.1
 
 devDependencies:
-  '@google/dscc': 0.3.21
+  '@google/dscc': 0.3.22
   '@google/dscc-scripts': 1.0.17
   copy-webpack-plugin: 9.0.1
 
@@ -50,6 +50,10 @@ packages:
 
   /@google/dscc/0.3.21:
     resolution: {integrity: sha512-ljaOO5a22g8VoCPfeXHwVLau1/0jkZyxM8VcePV6RXFJnoGt3f1v22urZhkjbPAgbILilzek77DEyXgjZ9xDvQ==}
+    dev: true
+
+  /@google/dscc/0.3.22:
+    resolution: {integrity: sha512-Vo7hakyZ8YVaBGOyzx/A2bFgr8e+DiWqMsELEidUSsokwombvKygYTdQJff9ehTO3Z4EhSkiA64eJVhqvM6XgA==}
     dev: true
 
   /@nodelib/fs.scandir/2.1.5:

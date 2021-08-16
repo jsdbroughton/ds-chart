@@ -18,7 +18,7 @@
     "start": "dscc-scripts viz start"
   },
   "devDependencies": {
-    "@google/dscc": "0.3.21",
+    "@google/dscc": "0.3.22",
     "@google/dscc-scripts": "1.0.17",
     "copy-webpack-plugin": "9.0.1"
   }
