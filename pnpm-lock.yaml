@@ -62,7 +62,7 @@ packages:
     engines: {node: '>=7.10.0', npm: '>=5.2.0'}
     hasBin: true
     dependencies:
-      '@google/dscc': 0.3.21
+      '@google/dscc': 0.3.22
       '@google/dscc-validation': 1.0.4
       argparse: 1.0.10
       bluebird: 3.7.2
@@ -91,10 +91,6 @@ packages:
     dependencies:
       ajv: 6.12.6
       typescript: 3.9.10
-    dev: true
-
-  /@google/dscc/0.3.21:
-    resolution: {integrity: sha512-ljaOO5a22g8VoCPfeXHwVLau1/0jkZyxM8VcePV6RXFJnoGt3f1v22urZhkjbPAgbILilzek77DEyXgjZ9xDvQ==}
     dev: true
 
   /@google/dscc/0.3.22:
@@ -134,20 +130,20 @@ packages:
     engines: {node: '>= 8'}
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
-      fastq: 1.11.1
+      fastq: 1.12.0
     dev: true
 
   /@types/glob/7.1.4:
     resolution: {integrity: sha512-w+LsMxKyYQm347Otw+IfBXOv9UWVjpHpCDdbBMt8Kz/xbvCYNjP+0qPh91Km3iKfSRLBB0P7fAMf0KHrPu+MyA==}
     dependencies:
       '@types/minimatch': 3.0.5
-      '@types/node': 16.6.1
+      '@types/node': 16.7.1
     dev: true
 
   /@types/http-proxy/1.17.7:
     resolution: {integrity: sha512-9hdj6iXH64tHSLTY+Vt2eYOGzSogC+JQ2H7bdPWkuh7KXP5qLllWx++t+K9Wk556c3dkDdPws/SpMRi0sdCT1w==}
     dependencies:
-      '@types/node': 16.6.1
+      '@types/node': 16.7.1
     dev: true
 
   /@types/json-schema/7.0.9:
@@ -158,8 +154,8 @@ packages:
     resolution: {integrity: sha512-Klz949h02Gz2uZCMGwDUSDS1YBlTdDDgbWHi+81l29tQALUtvz4rAYi5uoVhE5Lagoq6DeqAUlbrHvW/mXDgdQ==}
     dev: true
 
-  /@types/node/16.6.1:
-    resolution: {integrity: sha512-Sr7BhXEAer9xyGuCN3Ek9eg9xPviCF2gfu9kTfuU2HkTVAMYSDeX40fvpmo72n5nansg3nsBjuQBrsS28r+NUw==}
+  /@types/node/16.7.1:
+    resolution: {integrity: sha512-ncRdc45SoYJ2H4eWU9ReDfp3vtFqDYhjOsKlFFUDEn8V1Bgr2RjYal8YT5byfadWIRluhPFU6JiDOl0H6Sl87A==}
     dev: true
 
   /@types/retry/0.12.1:
@@ -587,6 +583,7 @@ packages:
 
   /bindings/1.5.0:
     resolution: {integrity: sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ==}
+    requiresBuild: true
     dependencies:
       file-uri-to-path: 1.0.0
     dev: true
@@ -1783,8 +1780,8 @@ packages:
     resolution: {integrity: sha1-PYpcZog6FqMMqGQ+hR8Zuqd5eRc=}
     dev: true
 
-  /fastq/1.11.1:
-    resolution: {integrity: sha512-HOnr8Mc60eNYl1gzwp6r5RoUyAn5/glBolUzP/Ez6IFVPMPirxn/9phgL6zhOtaTy7ISwPvQ+wT+hfcRZh/bzw==}
+  /fastq/1.12.0:
+    resolution: {integrity: sha512-VNX0QkHK3RsXVKr9KrlUv/FoTa0NdbYoHHl7uXHv2rzyHSlxjdNAKug2twd9luJxpcyNeAgf5iPPMutJO67Dfg==}
     dependencies:
       reusify: 1.0.4
     dev: true
@@ -1809,6 +1806,7 @@ packages:
 
   /file-uri-to-path/1.0.0:
     resolution: {integrity: sha512-0Zt+s3L7Vf1biwWZ29aARiVYLx7iMGnEUl9x33fbB/j3jR81u/O2LbqK+Bm1CDSNDKVtJ/YjwY7TUd5SkeLQLw==}
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -1903,8 +1901,8 @@ packages:
       readable-stream: 2.3.7
     dev: true
 
-  /follow-redirects/1.14.1:
-    resolution: {integrity: sha512-HWqDgT7ZEkqRzBvc2s64vSZ/hfOceEol3ac/7tKwzuvEyWx3/4UegXh5oBOIotkGsObyk3xznnSRVADBgWSQVg==}
+  /follow-redirects/1.14.2:
+    resolution: {integrity: sha512-yLR6WaE2lbF0x4K2qE2p9PEXKLDjUjnR/xmjS3wHAYxtlsI9MLLBJUZirAHKzUZDGLxje7w/cXR49WOUo4rbsA==}
     engines: {node: '>=4.0'}
     peerDependencies:
       debug: '*'
@@ -1913,8 +1911,8 @@ packages:
         optional: true
     dev: true
 
-  /follow-redirects/1.14.1_debug@4.3.2:
-    resolution: {integrity: sha512-HWqDgT7ZEkqRzBvc2s64vSZ/hfOceEol3ac/7tKwzuvEyWx3/4UegXh5oBOIotkGsObyk3xznnSRVADBgWSQVg==}
+  /follow-redirects/1.14.2_debug@4.3.2:
+    resolution: {integrity: sha512-yLR6WaE2lbF0x4K2qE2p9PEXKLDjUjnR/xmjS3wHAYxtlsI9MLLBJUZirAHKzUZDGLxje7w/cXR49WOUo4rbsA==}
     engines: {node: '>=4.0'}
     peerDependencies:
       debug: '*'
@@ -1987,6 +1985,7 @@ packages:
     resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -2329,7 +2328,7 @@ packages:
     engines: {node: '>=8.0.0'}
     dependencies:
       eventemitter3: 4.0.7
-      follow-redirects: 1.14.1
+      follow-redirects: 1.14.2
       requires-port: 1.0.0
     transitivePeerDependencies:
       - debug
@@ -2340,7 +2339,7 @@ packages:
     engines: {node: '>=8.0.0'}
     dependencies:
       eventemitter3: 4.0.7
-      follow-redirects: 1.14.1_debug@4.3.2
+      follow-redirects: 1.14.2_debug@4.3.2
       requires-port: 1.0.0
     transitivePeerDependencies:
       - debug
@@ -3193,6 +3192,7 @@ packages:
 
   /nan/2.15.0:
     resolution: {integrity: sha512-8ZtvEnA2c5aYCZYd1cvgdnU6cqwixRoYg70xPLWUws5ORTa/lnw+u4amixRS/Ac5U5mQVgp9pnlSUnbNWFaWZQ==}
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -4808,6 +4808,7 @@ packages:
 
   /watchpack-chokidar2/2.0.1:
     resolution: {integrity: sha512-nCFfBIPKr5Sh61s4LPpy1Wtfi0HE8isJ3d2Yb5/Ppw2P2B/3eVSEBjKfN0fmHJSK14+31KwMKmcrzs2GM4P0Ww==}
+    requiresBuild: true
     dependencies:
       chokidar: 2.1.8
     dev: true
