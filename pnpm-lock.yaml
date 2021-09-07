@@ -7,7 +7,7 @@ specifiers:
   eslint: 7.32.0
   eslint-config-prettier: 8.3.0
   prettier: 2.3.2
-  webpack-dev-server: 4.1.0
+  webpack-dev-server: 4.1.1
 
 devDependencies:
   '@google/dscc': 0.3.22
@@ -16,7 +16,7 @@ devDependencies:
   eslint: 7.32.0
   eslint-config-prettier: 8.3.0_eslint@7.32.0
   prettier: 2.3.2
-  webpack-dev-server: 4.1.0
+  webpack-dev-server: 4.1.1
 
 packages:
 
@@ -380,6 +380,12 @@ packages:
   /ansi-escapes/3.2.0:
     resolution: {integrity: sha512-cBhpre4ma+U0T1oM5fXg7Dy1Jw7zzwv7lt/GoCpr+hDQJoYnKVPLL4dCvSEFMmQurOQvSrwT7SL/DAlhBI97RQ==}
     engines: {node: '>=4'}
+    dev: true
+
+  /ansi-html-community/0.0.8:
+    resolution: {integrity: sha512-1APHAyr3+PCamwNw3bXCPp4HFLONZt/yIH0sZp0/469KWNTEy+qN5jQ3GVX6DMZ1UXAi34yVwtTeaG/HpBuuzw==}
+    engines: {'0': node >= 0.8.0}
+    hasBin: true
     dev: true
 
   /ansi-html/0.0.7:
@@ -4927,8 +4933,8 @@ packages:
       yargs: 13.3.2
     dev: true
 
-  /webpack-dev-server/4.1.0:
-    resolution: {integrity: sha512-PnnoCHuLKxH3vYff2EbORntD0Pd+MKclDIO8AcKsDVRToqY9/oeIwwUs5alA2B5OPgXJhaDNkBJAmb0OaWZFJA==}
+  /webpack-dev-server/4.1.1:
+    resolution: {integrity: sha512-Kl1mnCEw8Cy1Kw173gCxLIB242LfPKEOj9WoKhKz/MbryZTNrILzOJTk8kiczw/YUEPzn3gcltCQv6hDsLudRg==}
     engines: {node: '>= 12.13.0'}
     hasBin: true
     peerDependencies:
@@ -4938,7 +4944,7 @@ packages:
       webpack-cli:
         optional: true
     dependencies:
-      ansi-html: 0.0.7
+      ansi-html-community: 0.0.8
       bonjour: 3.5.0
       chokidar: 3.5.2
       colorette: 1.3.0
