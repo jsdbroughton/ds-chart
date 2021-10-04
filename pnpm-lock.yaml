@@ -7,7 +7,7 @@ specifiers:
   eslint: 7.32.0
   eslint-config-prettier: 8.3.0
   prettier: 2.4.1
-  webpack-dev-server: 4.3.0
+  webpack-dev-server: 4.3.1
 
 devDependencies:
   '@google/dscc': 0.3.22
@@ -16,7 +16,7 @@ devDependencies:
   eslint: 7.32.0
   eslint-config-prettier: 8.3.0_eslint@7.32.0
   prettier: 2.4.1
-  webpack-dev-server: 4.3.0
+  webpack-dev-server: 4.3.1
 
 packages:
 
@@ -4910,8 +4910,8 @@ packages:
       yargs: 13.3.2
     dev: true
 
-  /webpack-dev-server/4.3.0:
-    resolution: {integrity: sha512-kuqP9Xn4OzcKe7f0rJwd4p8xqiD+4b5Lzu8tJa8OttRL3E1Q8gI2KmUtouJTgDswjjvHOHlZDV8LTQfSY5qZSA==}
+  /webpack-dev-server/4.3.1:
+    resolution: {integrity: sha512-qNXQCVYo1kYhH9pgLtm8LRNkXX3XzTfHSj/zqzaqYzGPca+Qjr+81wj1jgPMCHhIhso9WEQ+kX9z23iG9PzQ7w==}
     engines: {node: '>= 12.13.0'}
     hasBin: true
     peerDependencies:
