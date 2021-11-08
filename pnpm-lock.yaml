@@ -81,15 +81,15 @@ packages:
     resolution: {integrity: sha512-JQlEKbcgEUjBFhLIF4iqM7u/9lwgHRBcpHrmUNCALK0Q3amXN6lxdoXLnF0sm11E9VqTmBALR87IlUg1bZ8A9A==}
     engines: {node: '>=10.10.0'}
     dependencies:
-      '@humanwhocodes/object-schema': 1.2.0
+      '@humanwhocodes/object-schema': 1.2.1
       debug: 4.3.2
       minimatch: 3.0.4
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /@humanwhocodes/object-schema/1.2.0:
-    resolution: {integrity: sha512-wdppn25U8z/2yiaT6YGquE6X8sSv7hNMWSXYSSU1jGv/yd6XqjXgTDJ8KP4NgjTXfJ3GbRjeeb8RTV7a/VpM+w==}
+  /@humanwhocodes/object-schema/1.2.1:
+    resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: true
 
   /@nodelib/fs.scandir/2.1.5:
@@ -2082,7 +2082,7 @@ packages:
       array-union: 2.1.0
       dir-glob: 3.0.1
       fast-glob: 3.2.7
-      ignore: 5.1.8
+      ignore: 5.1.9
       merge2: 1.4.1
       slash: 3.0.0
     dev: true
@@ -2351,8 +2351,8 @@ packages:
     engines: {node: '>= 4'}
     dev: true
 
-  /ignore/5.1.8:
-    resolution: {integrity: sha512-BMpfD7PpiETpBl/A6S498BaIJ6Y/ABT93ETbby2fP00v4EbvPBXWEoaR1UBPKs3iR53pJY7EtZk5KACI57i1Uw==}
+  /ignore/5.1.9:
+    resolution: {integrity: sha512-2zeMQpbKz5dhZ9IwL0gbxSW5w0NK/MSAMtNuhgIHEPmaU3vPdKPL0UdvUCXs5SS4JAwsBxysK5sFMW8ocFiVjQ==}
     engines: {node: '>= 4'}
     dev: true
 
@@ -2994,8 +2994,8 @@ packages:
     hasBin: true
     dev: true
 
-  /mime/2.5.2:
-    resolution: {integrity: sha512-tqkh47FzKeCPD2PUiPB6pkbMzsCasjxAfC62/Wap5qrUWcb+sFasXUC5I3gYM5iBM8v/Qpn4UK0x+j0iHyFPDg==}
+  /mime/2.6.0:
+    resolution: {integrity: sha512-USPkMeET31rOMiarsBNIHZKLGgvKc/LrjofAnBlOttf5ajRvqiRA8QsenbcooctK6d6Ts6aqZXBA+XbkKthiQg==}
     engines: {node: '>=4.0.0'}
     hasBin: true
     dev: true
@@ -4760,7 +4760,7 @@ packages:
       webpack: ^4.0.0 || ^5.0.0
     dependencies:
       memory-fs: 0.4.1
-      mime: 2.5.2
+      mime: 2.6.0
       mkdirp: 0.5.5
       range-parser: 1.2.1
       webpack: 4.46.0_webpack-cli@3.3.12
