@@ -2366,8 +2366,8 @@ packages:
     hasBin: true
     dev: true
 
-  /mime/2.5.2:
-    resolution: {integrity: sha512-tqkh47FzKeCPD2PUiPB6pkbMzsCasjxAfC62/Wap5qrUWcb+sFasXUC5I3gYM5iBM8v/Qpn4UK0x+j0iHyFPDg==}
+  /mime/2.6.0:
+    resolution: {integrity: sha512-USPkMeET31rOMiarsBNIHZKLGgvKc/LrjofAnBlOttf5ajRvqiRA8QsenbcooctK6d6Ts6aqZXBA+XbkKthiQg==}
     engines: {node: '>=4.0.0'}
     hasBin: true
     dev: true
@@ -3870,7 +3870,7 @@ packages:
       webpack: ^4.0.0 || ^5.0.0
     dependencies:
       memory-fs: 0.4.1
-      mime: 2.5.2
+      mime: 2.6.0
       mkdirp: 0.5.5
       range-parser: 1.2.1
       webpack: 4.46.0_webpack-cli@3.3.12
