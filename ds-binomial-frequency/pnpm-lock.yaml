@@ -3,12 +3,12 @@ lockfileVersion: 5.3
 specifiers:
   '@google/dscc': 0.3.22
   '@google/dscc-scripts': 1.0.17
-  copy-webpack-plugin: 9.0.1
+  copy-webpack-plugin: 9.1.0
 
 devDependencies:
   '@google/dscc': 0.3.22
   '@google/dscc-scripts': 1.0.17
-  copy-webpack-plugin: 9.0.1
+  copy-webpack-plugin: 9.1.0
 
 packages:
 
@@ -921,8 +921,8 @@ packages:
       serialize-javascript: 1.9.1
     dev: true
 
-  /copy-webpack-plugin/9.0.1:
-    resolution: {integrity: sha512-14gHKKdYIxF84jCEgPgYXCPpldbwpxxLbCmA7LReY7gvbaT555DgeBWBgBZM116tv/fO6RRJrsivBqRyRlukhw==}
+  /copy-webpack-plugin/9.1.0:
+    resolution: {integrity: sha512-rxnR7PaGigJzhqETHGmAcxKnLZSR5u1Y3/bcIv/1FnqXedcL/E2ewK7ZCNrArJKCiSv8yVXhTqetJh8inDvfsA==}
     engines: {node: '>= 12.13.0'}
     peerDependencies:
       webpack: ^5.1.0
@@ -931,7 +931,6 @@ packages:
       glob-parent: 6.0.2
       globby: 11.0.4
       normalize-path: 3.0.0
-      p-limit: 3.1.0
       schema-utils: 3.1.1
       serialize-javascript: 6.0.0
     dev: true
@@ -2791,13 +2790,6 @@ packages:
       p-try: 2.2.0
     dev: true
 
-  /p-limit/3.1.0:
-    resolution: {integrity: sha512-TYOanM3wGwNGsZN2cVTYPArw454xnXj5qmWF1bEoAc4+cU/ol7GVh7odevjp1FNHduHc3KZMcFduxU5Xc6uJRQ==}
-    engines: {node: '>=10'}
-    dependencies:
-      yocto-queue: 0.1.0
-    dev: true
-
   /p-locate/2.0.0:
     resolution: {integrity: sha1-IKAQOyIqcMj9OcwuWAaA893l7EM=}
     engines: {node: '>=4'}
@@ -4225,9 +4217,4 @@ packages:
       which-module: 2.0.0
       y18n: 4.0.3
       yargs-parser: 13.1.2
-    dev: true
-
-  /yocto-queue/0.1.0:
-    resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
-    engines: {node: '>=10'}
     dev: true
