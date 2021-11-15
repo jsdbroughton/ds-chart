@@ -59,7 +59,7 @@ packages:
       typescript: 3.9.10
       webpack: 4.46.0_webpack-cli@3.3.12
       webpack-cli: 3.3.12_webpack@4.46.0
-      webpack-dev-server: 3.11.2_46edf965869dcc7c8d09e022f331d1ea
+      webpack-dev-server: 3.11.3_46edf965869dcc7c8d09e022f331d1ea
       webpack-merge: 4.2.2
       webpack-plugin-replace: 1.2.0
     transitivePeerDependencies:
@@ -117,13 +117,13 @@ packages:
     resolution: {integrity: sha512-ZUxbzKl0IfJILTS6t7ip5fQQM/J3TJYubDm3nMbgubNNYS62eXeUpoLUC8/7fJNiFYHTrGPQn7hspDUzIHX3UA==}
     dependencies:
       '@types/minimatch': 3.0.5
-      '@types/node': 16.11.6
+      '@types/node': 16.11.7
     dev: true
 
   /@types/http-proxy/1.17.7:
     resolution: {integrity: sha512-9hdj6iXH64tHSLTY+Vt2eYOGzSogC+JQ2H7bdPWkuh7KXP5qLllWx++t+K9Wk556c3dkDdPws/SpMRi0sdCT1w==}
     dependencies:
-      '@types/node': 16.11.6
+      '@types/node': 16.11.7
     dev: true
 
   /@types/json-schema/7.0.9:
@@ -134,8 +134,8 @@ packages:
     resolution: {integrity: sha512-Klz949h02Gz2uZCMGwDUSDS1YBlTdDDgbWHi+81l29tQALUtvz4rAYi5uoVhE5Lagoq6DeqAUlbrHvW/mXDgdQ==}
     dev: true
 
-  /@types/node/16.11.6:
-    resolution: {integrity: sha512-ua7PgUoeQFjmWPcoo9khiPum3Pd60k4/2ZGXt18sm2Slk0W0xZTqt5Y0Ny1NyBiN1EVQ/+FaF9NcY4Qe6rwk5w==}
+  /@types/node/16.11.7:
+    resolution: {integrity: sha512-QB5D2sqfSjCmTuWcBWyJ+/44bcjO7VbjSbOE0ucoVbAsSNQc4Lt6QkgkVXkTDwkL4z/beecZNDvVX15D4P8Jbw==}
     dev: true
 
   /@types/retry/0.12.1:
@@ -281,7 +281,7 @@ packages:
     resolution: {integrity: sha512-Il80Qs2WjYlJIBNzNkK6KYqlVMTbZLXgHx2oT0pU/fjRHyEp+PEfEPY0R3WCwAGVOtauxh1hOxNgIf5bv7dQpA==}
     engines: {node: '>= 0.6'}
     dependencies:
-      mime-types: 2.1.33
+      mime-types: 2.1.34
       negotiator: 0.6.2
     dev: true
 
@@ -355,12 +355,6 @@ packages:
 
   /ansi-html-community/0.0.8:
     resolution: {integrity: sha512-1APHAyr3+PCamwNw3bXCPp4HFLONZt/yIH0sZp0/469KWNTEy+qN5jQ3GVX6DMZ1UXAi34yVwtTeaG/HpBuuzw==}
-    engines: {'0': node >= 0.8.0}
-    hasBin: true
-    dev: true
-
-  /ansi-html/0.0.7:
-    resolution: {integrity: sha1-gTWEAhliqenm/QOflA0S9WynhZ4=}
     engines: {'0': node >= 0.8.0}
     hasBin: true
     dev: true
@@ -960,7 +954,7 @@ packages:
     resolution: {integrity: sha512-AF3r7P5dWxL8MxyITRMlORQNaOA2IkAFaTr4k7BUumjPtRpGDTZpl0Pb1XCO6JeDCBdp126Cgs9sMxqSjgYyRg==}
     engines: {node: '>= 0.6'}
     dependencies:
-      mime-db: 1.50.0
+      mime-db: 1.51.0
     dev: true
 
   /compression/1.7.4:
@@ -1492,8 +1486,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /eslint-visitor-keys/3.0.0:
-    resolution: {integrity: sha512-mJOZa35trBTb3IyRmo8xmKBZlxf+N7OnUl4+ZhJHs/r+0770Wh/LEACE2pqMGMe27G/4y8P2bYGk4J70IC5k1Q==}
+  /eslint-visitor-keys/3.1.0:
+    resolution: {integrity: sha512-yWJFpu4DtjsWKkt5GeNBBuZMlNcYVs6vRCLoCVEJrTjaSB6LC98gFipNK/erM2Heg/E8mIK+hXG/pJMLK+eRZA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
@@ -1513,7 +1507,7 @@ packages:
       escape-string-regexp: 4.0.0
       eslint-scope: 6.0.0
       eslint-utils: 3.0.0_eslint@8.2.0
-      eslint-visitor-keys: 3.0.0
+      eslint-visitor-keys: 3.1.0
       espree: 9.0.0
       esquery: 1.4.0
       esutils: 2.0.3
@@ -1550,7 +1544,7 @@ packages:
     dependencies:
       acorn: 8.5.0
       acorn-jsx: 5.3.2_acorn@8.5.0
-      eslint-visitor-keys: 3.0.0
+      eslint-visitor-keys: 3.1.0
     dev: true
 
   /esprima/4.0.1:
@@ -1858,12 +1852,12 @@ packages:
     resolution: {integrity: sha512-dm9s5Pw7Jc0GvMYbshN6zchCA9RgQlzzEZX3vylR9IqFfS8XciblUXOKfW6SiuJ0e13eDYZoZV5wdrev7P3Nwg==}
     engines: {node: ^10.12.0 || >=12.0.0}
     dependencies:
-      flatted: 3.2.2
+      flatted: 3.2.4
       rimraf: 3.0.2
     dev: true
 
-  /flatted/3.2.2:
-    resolution: {integrity: sha512-JaTY/wtrcSyvXJl4IMFHPKyFur1sE9AUqc0QnhOaJ0CxHtAoIV8pYDzeEfAaNEtGkOfq4gr3LBFmdXW5mOQFnA==}
+  /flatted/3.2.4:
+    resolution: {integrity: sha512-8/sOawo8tJ4QOBX8YlQBMxL8+RLZfxMQOif9o0KUKTNTjMYElWPE0r/m5VNFxTRd0NSw8qSy8dajrwX4RYI1Hw==}
     dev: true
 
   /flush-write-stream/1.1.1:
@@ -2975,16 +2969,16 @@ packages:
       brorand: 1.1.0
     dev: true
 
-  /mime-db/1.50.0:
-    resolution: {integrity: sha512-9tMZCDlYHqeERXEHO9f/hKfNXhre5dK2eE/krIvUjZbS2KPcqGDfNShIWS1uW9XOTKQKqK6qbeOci18rbfW77A==}
+  /mime-db/1.51.0:
+    resolution: {integrity: sha512-5y8A56jg7XVQx2mbv1lu49NR4dokRnhZYTtL+KGfaa27uq4pSTXkwQkFJl4pkRMyNFz/EtYDSkiiEHx3F7UN6g==}
     engines: {node: '>= 0.6'}
     dev: true
 
-  /mime-types/2.1.33:
-    resolution: {integrity: sha512-plLElXp7pRDd0bNZHw+nMd52vRYjLwQjygaNg7ddJ2uJtTlmnTCjWuPKxVu6//AdaRuME84SvLW91sIkBqGT0g==}
+  /mime-types/2.1.34:
+    resolution: {integrity: sha512-6cP692WwGIs9XXdOO4++N+7qjqv0rqxxVvJ3VHPh/Sc9mVZcQP+ZGhkKiTvWMQRr2tbHkJP/Yn7Y0npb3ZBs4A==}
     engines: {node: '>= 0.6'}
     dependencies:
-      mime-db: 1.50.0
+      mime-db: 1.51.0
     dev: true
 
   /mime/1.6.0:
@@ -4046,7 +4040,7 @@ packages:
       debug: 2.6.9
       escape-html: 1.0.3
       http-errors: 1.6.3
-      mime-types: 2.1.33
+      mime-types: 2.1.34
       parseurl: 1.3.3
     dev: true
 
@@ -4577,7 +4571,7 @@ packages:
     engines: {node: '>= 0.6'}
     dependencies:
       media-typer: 0.3.0
-      mime-types: 2.1.33
+      mime-types: 2.1.34
     dev: true
 
   /typedarray/0.0.6:
@@ -4767,13 +4761,13 @@ packages:
     dependencies:
       colorette: 2.0.16
       memfs: 3.3.0
-      mime-types: 2.1.33
+      mime-types: 2.1.34
       range-parser: 1.2.1
       schema-utils: 3.1.1
     dev: true
 
-  /webpack-dev-server/3.11.2_46edf965869dcc7c8d09e022f331d1ea:
-    resolution: {integrity: sha512-A80BkuHRQfCiNtGBS1EMf2ChTUs0x+B3wGDFmOeT4rmJOHhHTCH2naNxIHhmkr0/UillP4U3yeIyv1pNp+QDLQ==}
+  /webpack-dev-server/3.11.3_46edf965869dcc7c8d09e022f331d1ea:
+    resolution: {integrity: sha512-3x31rjbEQWKMNzacUZRE6wXvUFuGpH7vr0lIEbYpMAG9BOxi0928QU1BBswOAP3kg3H1O4hiS+sq4YyAn6ANnA==}
     engines: {node: '>= 6.11.5'}
     hasBin: true
     peerDependencies:
@@ -4783,7 +4777,7 @@ packages:
       webpack-cli:
         optional: true
     dependencies:
-      ansi-html: 0.0.7
+      ansi-html-community: 0.0.8
       bonjour: 3.5.0
       chokidar: 2.1.8
       compression: 1.7.4
