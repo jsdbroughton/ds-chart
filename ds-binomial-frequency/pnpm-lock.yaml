@@ -3,12 +3,12 @@ lockfileVersion: 5.3
 specifiers:
   '@google/dscc': 0.3.22
   '@google/dscc-scripts': 1.0.17
-  copy-webpack-plugin: 10.2.0
+  copy-webpack-plugin: 10.2.1
 
 devDependencies:
   '@google/dscc': 0.3.22
   '@google/dscc-scripts': 1.0.17
-  copy-webpack-plugin: 10.2.0
+  copy-webpack-plugin: 10.2.1
 
 packages:
 
@@ -934,8 +934,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /copy-webpack-plugin/10.2.0:
-    resolution: {integrity: sha512-my6iXII95c78w14HzYCNya5TlJYa44lOppAge5GSTMM1SyDxNsVGCJvhP4/ld6snm8lzjn3XOonMZD6s1L86Og==}
+  /copy-webpack-plugin/10.2.1:
+    resolution: {integrity: sha512-nr81NhCAIpAWXGCK5thrKmfCQ6GDY0L5RN0U+BnIn/7Us55+UCex5ANNsNKmIVtDRnk0Ecf+/kzp9SUVrrBMLg==}
     engines: {node: '>= 12.20.0'}
     peerDependencies:
       webpack: ^5.1.0
