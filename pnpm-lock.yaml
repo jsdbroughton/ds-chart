@@ -3,7 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@google/dscc': 0.3.22
   '@google/dscc-scripts': 1.0.17
-  copy-webpack-plugin: 10.2.2
+  copy-webpack-plugin: 10.2.3
   eslint: 8.8.0
   eslint-config-prettier: 8.3.0
   prettier: 2.5.1
@@ -12,7 +12,7 @@ specifiers:
 devDependencies:
   '@google/dscc': 0.3.22
   '@google/dscc-scripts': 1.0.17
-  copy-webpack-plugin: 10.2.2
+  copy-webpack-plugin: 10.2.3
   eslint: 8.8.0
   eslint-config-prettier: 8.3.0_eslint@8.8.0
   prettier: 2.5.1
@@ -1141,8 +1141,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /copy-webpack-plugin/10.2.2:
-    resolution: {integrity: sha512-hNdS4YM9NmbpW++GT2QevyXdeG9m2NZYFNDWN63MzZzFO1IFuH1KMtVJAoXX6yzTgsVz/x00exWcgdyX57ta9g==}
+  /copy-webpack-plugin/10.2.3:
+    resolution: {integrity: sha512-DKg4/ijemcJmpo2vBQiwiL2u+t2XN6YYlr2v2Ejqltnn2vbPfXLAz/v0Rv8uB4UmlbB7NH4cGhLxCmtaVppvEQ==}
     engines: {node: '>= 12.20.0'}
     peerDependencies:
       webpack: ^5.1.0
