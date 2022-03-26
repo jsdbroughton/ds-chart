@@ -21,7 +21,7 @@
     "@google/dscc": "0.3.22",
     "@google/dscc-scripts": "1.0.17",
     "copy-webpack-plugin": "10.2.4",
-    "eslint": "8.11.0",
+    "eslint": "8.12.0",
     "eslint-config-prettier": "8.5.0",
     "prettier": "2.6.1",
     "webpack-dev-server": "4.7.4"
