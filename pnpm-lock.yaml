@@ -7,7 +7,7 @@ specifiers:
   eslint: 8.21.0
   eslint-config-prettier: 8.5.0
   prettier: 2.7.1
-  webpack-dev-server: 4.9.3
+  webpack-dev-server: 4.10.0
 
 devDependencies:
   '@google/dscc': 0.3.22
@@ -16,7 +16,7 @@ devDependencies:
   eslint: 8.21.0
   eslint-config-prettier: 8.5.0_eslint@8.21.0
   prettier: 2.7.1
-  webpack-dev-server: 4.9.3
+  webpack-dev-server: 4.10.0
 
 packages:
 
@@ -4350,7 +4350,7 @@ packages:
     dev: true
 
   /select-hose/2.0.0:
-    resolution: {integrity: sha1-Yl2GWPhlr0Psliv8N2o3NZpJlMo=}
+    resolution: {integrity: sha512-mEugaLK+YfkijB4fx0e6kImuJdCIt2LxCRcbEYPqRGCs4F2ogyfZU5IAZRdjCP8JPq2AtdNoC/Dux63d9Kiryg==}
     dev: true
 
   /selfsigned/1.10.14:
@@ -5281,8 +5281,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /webpack-dev-server/4.9.3:
-    resolution: {integrity: sha512-3qp/eoboZG5/6QgiZ3llN8TUzkSpYg1Ko9khWX1h40MIEUNS2mDoIa8aXsPfskER+GbTvs/IJZ1QTBBhhuetSw==}
+  /webpack-dev-server/4.10.0:
+    resolution: {integrity: sha512-7dezwAs+k6yXVFZ+MaL8VnE+APobiO3zvpp3rBHe/HmWQ+avwh0Q3d0xxacOiBybZZ3syTZw9HXzpa3YNbAZDQ==}
     engines: {node: '>= 12.13.0'}
     hasBin: true
     peerDependencies:
