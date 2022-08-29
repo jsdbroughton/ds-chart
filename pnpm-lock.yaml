@@ -7,7 +7,7 @@ specifiers:
   eslint: 8.23.0
   eslint-config-prettier: 8.5.0
   prettier: 2.7.1
-  webpack-dev-server: 4.10.0
+  webpack-dev-server: 4.10.1
 
 devDependencies:
   '@google/dscc': 0.3.22
@@ -16,7 +16,7 @@ devDependencies:
   eslint: 8.23.0
   eslint-config-prettier: 8.5.0_eslint@8.23.0
   prettier: 2.7.1
-  webpack-dev-server: 4.10.0
+  webpack-dev-server: 4.10.1
 
 packages:
 
@@ -3559,7 +3559,7 @@ packages:
     dev: true
 
   /normalize-path/2.1.1:
-    resolution: {integrity: sha1-GrKLVW4Zg2Oowab35vogE3/mrtk=}
+    resolution: {integrity: sha512-3pKJwH184Xo/lnH6oyP1q2pMd7HcypqqmRs91/6/i2CGtWwIKGCkOOMTm/zXbgTEWHw1uNpNi/igc3ePOYHb6w==}
     engines: {node: '>=0.10.0'}
     dependencies:
       remove-trailing-separator: 1.1.0
@@ -5286,8 +5286,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /webpack-dev-server/4.10.0:
-    resolution: {integrity: sha512-7dezwAs+k6yXVFZ+MaL8VnE+APobiO3zvpp3rBHe/HmWQ+avwh0Q3d0xxacOiBybZZ3syTZw9HXzpa3YNbAZDQ==}
+  /webpack-dev-server/4.10.1:
+    resolution: {integrity: sha512-FIzMq3jbBarz3ld9l7rbM7m6Rj1lOsgq/DyLGMX/fPEB1UBUPtf5iL/4eNfhx8YYJTRlzfv107UfWSWcBK5Odw==}
     engines: {node: '>= 12.13.0'}
     hasBin: true
     peerDependencies:
