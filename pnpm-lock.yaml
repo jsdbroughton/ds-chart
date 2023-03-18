@@ -7,7 +7,7 @@ specifiers:
   eslint: 8.36.0
   eslint-config-prettier: 8.7.0
   prettier: 2.8.4
-  webpack-dev-server: 4.13.0
+  webpack-dev-server: 4.13.1
 
 devDependencies:
   '@google/dscc': 0.3.22
@@ -16,7 +16,7 @@ devDependencies:
   eslint: 8.36.0
   eslint-config-prettier: 8.7.0_eslint@8.36.0
   prettier: 2.8.4
-  webpack-dev-server: 4.13.0
+  webpack-dev-server: 4.13.1
 
 packages:
 
@@ -5298,14 +5298,16 @@ packages:
       - utf-8-validate
     dev: true
 
-  /webpack-dev-server/4.13.0:
-    resolution: {integrity: sha512-1objTjwG2IaLNz0RjRQd41PjWOxHPc4I+1al4kmZu8J2nWcZcu1N1zlEWIJXTiYIkzhQ1RTrwjX4elnL+2e2GA==}
+  /webpack-dev-server/4.13.1:
+    resolution: {integrity: sha512-5tWg00bnWbYgkN+pd5yISQKDejRBYGEw15RaEEslH+zdbNDxxaZvEAO2WulaSaFKb5n3YG8JXsGaDsut1D0xdA==}
     engines: {node: '>= 12.13.0'}
     hasBin: true
     peerDependencies:
       webpack: ^4.37.0 || ^5.0.0
       webpack-cli: '*'
     peerDependenciesMeta:
+      webpack:
+        optional: true
       webpack-cli:
         optional: true
     dependencies:
