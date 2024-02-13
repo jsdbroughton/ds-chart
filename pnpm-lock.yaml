@@ -24,8 +24,8 @@ devDependencies:
     specifier: 3.2.5
     version: 3.2.5
   webpack-dev-server:
-    specifier: 5.0.0
-    version: 5.0.0(quill-delta@5.1.0)(rxjs@7.8.1)(tslib@2.6.2)(webpack@5.90.1)
+    specifier: 5.0.1
+    version: 5.0.1(quill-delta@5.1.0)(rxjs@7.8.1)(tslib@2.6.2)(webpack@5.90.1)
 
 packages:
 
@@ -5616,8 +5616,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /webpack-dev-server@5.0.0(quill-delta@5.1.0)(rxjs@7.8.1)(tslib@2.6.2)(webpack@5.90.1):
-    resolution: {integrity: sha512-3nEQmKcNTrHMcYoOOwOb+Uy/SuJ5I1uEvNPXxrXct/QDBV1l8xc2vh21GAPNUWcw7ECfNX051yhNCpR4VYqVdw==}
+  /webpack-dev-server@5.0.1(quill-delta@5.1.0)(rxjs@7.8.1)(tslib@2.6.2)(webpack@5.90.1):
+    resolution: {integrity: sha512-Mbla51FSVfk9WvGiCWRJLsMLq87LNxQitz477z0LIhHbx7ig/fIkU9R/OCNmf6A3tTaJoObwmYco9buC1oN+yA==}
     engines: {node: '>= 18.12.0'}
     hasBin: true
     peerDependencies:
