@@ -31,8 +31,8 @@ packages:
   '@types/minimatch@5.1.2':
     resolution: {integrity: sha512-K0VQKziLUWkVKiRVrx4a40iPaxTUefQmjtkQofBkYRcoaaL/8rhwDWww9qWbrgicNOgnpIsMxyNIUM4+n6dUIA==}
 
-  '@types/node@20.12.12':
-    resolution: {integrity: sha512-eWLDGF/FOSPtAvEqeRAQ4C8LSA7M1I7i0ky1I8U7kD1J5ITyW3AsRhQrKVoWf5pFKZ2kILsEGJhsI9r93PYnOw==}
+  '@types/node@20.14.0':
+    resolution: {integrity: sha512-5cHBxFGJx6L4s56Bubp4fglrEpmyJypsqI6RgzMfBHWUJQGWAAi8cWcgetEbZXHYXo9C2Fa4EEds/uSyS4cxmA==}
 
   '@webassemblyjs/ast@1.9.0':
     resolution: {integrity: sha512-C6wW5L+b7ogSDVqymbkkvuW9kruN//YisMED04xzeBBqjHa2FYnmvOlS6Xj68xWQRgWvI9cIglsjFowH/RJyEA==}
@@ -360,8 +360,8 @@ packages:
   chownr@1.1.4:
     resolution: {integrity: sha512-jJ0bqzaylmJtVnNgzTeSOs8DPavpbYgEr/b0YL8/2GO3xJEhInFmhKMUnEJQjZumK7KXGFhUy89PrsJWlakBVg==}
 
-  chrome-trace-event@1.0.3:
-    resolution: {integrity: sha512-p3KULyQg4S7NIHixdwbGX+nFHkoBiA4YQmyWtjb8XngSKV124nJmRysgAeujbUVb15vh+RvFUfCPqU7rXk+hZg==}
+  chrome-trace-event@1.0.4:
+    resolution: {integrity: sha512-rNjApaLzuwaOTjCiT8lSDdGN1APCiqkChLMJxJPWLunPAt5fy8xgU9/jNOchV84wfIxrA0lRQB7oCT8jrn/wrQ==}
     engines: {node: '>=6.0'}
 
   cipher-base@1.0.4:
@@ -491,8 +491,8 @@ packages:
       supports-color:
         optional: true
 
-  debug@4.3.4:
-    resolution: {integrity: sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==}
+  debug@4.3.5:
+    resolution: {integrity: sha512-pt0bNEmneDIvdL1Xsd9oDQ/wrQRkXDT4AUWlNZNPKvW5x/jyO9VFXkJUP07vQ2upmw5PlaITaPKc31jK13V+jg==}
     engines: {node: '>=6.0'}
     peerDependencies:
       supports-color: '*'
@@ -2217,16 +2217,16 @@ snapshots:
       cli-spinner: 0.2.10
       copy-webpack-plugin: 4.6.0
       execa: 1.0.0
-      mini-css-extract-plugin: 0.5.0(webpack@4.47.0(webpack-cli@3.3.12))
+      mini-css-extract-plugin: 0.5.0(webpack@4.47.0(webpack-cli@3.3.12(webpack@4.47.0)))
       mz: 2.7.0
       open: 6.4.0
       postcss-loader: 3.0.0
       terminal-link: 1.3.0
       ts-loader: 7.0.5(typescript@3.9.10)
       typescript: 3.9.10
-      webpack: 4.47.0(webpack-cli@3.3.12)
+      webpack: 4.47.0(webpack-cli@3.3.12(webpack@4.47.0))
       webpack-cli: 3.3.12(webpack@4.47.0)
-      webpack-dev-server: 3.11.3(webpack-cli@3.3.12(webpack@4.47.0))(webpack@4.47.0(webpack-cli@3.3.12))
+      webpack-dev-server: 3.11.3(webpack-cli@3.3.12(webpack@4.47.0))(webpack@4.47.0(webpack-cli@3.3.12(webpack@4.47.0)))
       webpack-merge: 4.2.2
       webpack-plugin-replace: 1.2.0
     transitivePeerDependencies:
@@ -2245,11 +2245,11 @@ snapshots:
   '@types/glob@7.2.0':
     dependencies:
       '@types/minimatch': 5.1.2
-      '@types/node': 20.12.12
+      '@types/node': 20.14.0
 
   '@types/minimatch@5.1.2': {}
 
-  '@types/node@20.12.12':
+  '@types/node@20.14.0':
     dependencies:
       undici-types: 5.26.5
 
@@ -2701,7 +2701,7 @@ snapshots:
 
   chownr@1.1.4: {}
 
-  chrome-trace-event@1.0.3: {}
+  chrome-trace-event@1.0.4: {}
 
   cipher-base@1.0.4:
     dependencies:
@@ -2870,7 +2870,7 @@ snapshots:
     optionalDependencies:
       supports-color: 6.1.0
 
-  debug@4.3.4(supports-color@6.1.0):
+  debug@4.3.5(supports-color@6.1.0):
     dependencies:
       ms: 2.1.2
     optionalDependencies:
@@ -3202,9 +3202,9 @@ snapshots:
       inherits: 2.0.4
       readable-stream: 2.3.8
 
-  follow-redirects@1.15.6(debug@4.3.4(supports-color@6.1.0)):
+  follow-redirects@1.15.6(debug@4.3.5(supports-color@6.1.0)):
     optionalDependencies:
-      debug: 4.3.4(supports-color@6.1.0)
+      debug: 4.3.5(supports-color@6.1.0)
 
   for-in@1.0.2: {}
 
@@ -3420,9 +3420,9 @@ snapshots:
 
   http-parser-js@0.5.8: {}
 
-  http-proxy-middleware@0.19.1(debug@4.3.4(supports-color@6.1.0))(supports-color@6.1.0):
+  http-proxy-middleware@0.19.1(debug@4.3.5(supports-color@6.1.0))(supports-color@6.1.0):
     dependencies:
-      http-proxy: 1.18.1(debug@4.3.4(supports-color@6.1.0))
+      http-proxy: 1.18.1(debug@4.3.5(supports-color@6.1.0))
       is-glob: 4.0.3
       lodash: 4.17.21
       micromatch: 3.1.10(supports-color@6.1.0)
@@ -3430,10 +3430,10 @@ snapshots:
       - debug
       - supports-color
 
-  http-proxy@1.18.1(debug@4.3.4(supports-color@6.1.0)):
+  http-proxy@1.18.1(debug@4.3.5(supports-color@6.1.0)):
     dependencies:
       eventemitter3: 4.0.7
-      follow-redirects: 1.15.6(debug@4.3.4(supports-color@6.1.0))
+      follow-redirects: 1.15.6(debug@4.3.5(supports-color@6.1.0))
       requires-port: 1.0.0
     transitivePeerDependencies:
       - debug
@@ -3730,11 +3730,11 @@ snapshots:
 
   mime@2.6.0: {}
 
-  mini-css-extract-plugin@0.5.0(webpack@4.47.0(webpack-cli@3.3.12)):
+  mini-css-extract-plugin@0.5.0(webpack@4.47.0(webpack-cli@3.3.12(webpack@4.47.0))):
     dependencies:
       loader-utils: 1.4.2
       schema-utils: 1.0.0
-      webpack: 4.47.0(webpack-cli@3.3.12)
+      webpack: 4.47.0(webpack-cli@3.3.12(webpack@4.47.0))
       webpack-sources: 1.4.3
 
   minimalistic-assert@1.0.1: {}
@@ -4405,7 +4405,7 @@ snapshots:
 
   spdy-transport@3.0.0(supports-color@6.1.0):
     dependencies:
-      debug: 4.3.4(supports-color@6.1.0)
+      debug: 4.3.5(supports-color@6.1.0)
       detect-node: 2.1.0
       hpack.js: 2.1.6
       obuf: 1.1.2
@@ -4416,7 +4416,7 @@ snapshots:
 
   spdy@4.0.2(supports-color@6.1.0):
     dependencies:
-      debug: 4.3.4(supports-color@6.1.0)
+      debug: 4.3.5(supports-color@6.1.0)
       handle-thing: 2.0.1
       http-deceiver: 1.2.7
       select-hose: 2.0.0
@@ -4511,7 +4511,7 @@ snapshots:
       ansi-escapes: 3.2.0
       supports-hyperlinks: 1.0.1
 
-  terser-webpack-plugin@1.4.5(webpack@4.47.0(webpack-cli@3.3.12)):
+  terser-webpack-plugin@1.4.5(webpack@4.47.0):
     dependencies:
       cacache: 12.0.4
       find-cache-dir: 2.1.0
@@ -4520,7 +4520,7 @@ snapshots:
       serialize-javascript: 4.0.0
       source-map: 0.6.1
       terser: 4.8.1
-      webpack: 4.47.0(webpack-cli@3.3.12)
+      webpack: 4.47.0(webpack-cli@3.3.12(webpack@4.47.0))
       webpack-sources: 1.4.3
       worker-farm: 1.7.0
 
@@ -4693,30 +4693,30 @@ snapshots:
       loader-utils: 1.4.2
       supports-color: 6.1.0
       v8-compile-cache: 2.4.0
-      webpack: 4.47.0(webpack-cli@3.3.12)
+      webpack: 4.47.0(webpack-cli@3.3.12(webpack@4.47.0))
       yargs: 13.3.2
 
-  webpack-dev-middleware@3.7.3(webpack@4.47.0(webpack-cli@3.3.12)):
+  webpack-dev-middleware@3.7.3(webpack@4.47.0(webpack-cli@3.3.12(webpack@4.47.0))):
     dependencies:
       memory-fs: 0.4.1
       mime: 2.6.0
       mkdirp: 0.5.6
       range-parser: 1.2.1
-      webpack: 4.47.0(webpack-cli@3.3.12)
+      webpack: 4.47.0(webpack-cli@3.3.12(webpack@4.47.0))
       webpack-log: 2.0.0
 
-  webpack-dev-server@3.11.3(webpack-cli@3.3.12(webpack@4.47.0))(webpack@4.47.0(webpack-cli@3.3.12)):
+  webpack-dev-server@3.11.3(webpack-cli@3.3.12(webpack@4.47.0))(webpack@4.47.0(webpack-cli@3.3.12(webpack@4.47.0))):
     dependencies:
       ansi-html-community: 0.0.8
       bonjour: 3.5.0
       chokidar: 2.1.8(supports-color@6.1.0)
       compression: 1.7.4(supports-color@6.1.0)
       connect-history-api-fallback: 1.6.0
-      debug: 4.3.4(supports-color@6.1.0)
+      debug: 4.3.5(supports-color@6.1.0)
       del: 4.1.1
       express: 4.19.2(supports-color@6.1.0)
       html-entities: 1.4.0
-      http-proxy-middleware: 0.19.1(debug@4.3.4(supports-color@6.1.0))(supports-color@6.1.0)
+      http-proxy-middleware: 0.19.1(debug@4.3.5(supports-color@6.1.0))(supports-color@6.1.0)
       import-local: 2.0.0
       internal-ip: 4.3.0
       ip: 1.1.9
@@ -4736,8 +4736,8 @@ snapshots:
       strip-ansi: 3.0.1
       supports-color: 6.1.0
       url: 0.11.3
-      webpack: 4.47.0(webpack-cli@3.3.12)
-      webpack-dev-middleware: 3.7.3(webpack@4.47.0(webpack-cli@3.3.12))
+      webpack: 4.47.0(webpack-cli@3.3.12(webpack@4.47.0))
+      webpack-dev-middleware: 3.7.3(webpack@4.47.0(webpack-cli@3.3.12(webpack@4.47.0)))
       webpack-log: 2.0.0
       ws: 6.2.2
       yargs: 13.3.2
@@ -4763,7 +4763,7 @@ snapshots:
       source-list-map: 2.0.1
       source-map: 0.6.1
 
-  webpack@4.47.0(webpack-cli@3.3.12):
+  webpack@4.47.0(webpack-cli@3.3.12(webpack@4.47.0)):
     dependencies:
       '@webassemblyjs/ast': 1.9.0
       '@webassemblyjs/helper-module-context': 1.9.0
@@ -4772,7 +4772,7 @@ snapshots:
       acorn: 6.4.2
       ajv: 6.12.6
       ajv-keywords: 3.5.2(ajv@6.12.6)
-      chrome-trace-event: 1.0.3
+      chrome-trace-event: 1.0.4
       enhanced-resolve: 4.5.0
       eslint-scope: 4.0.3
       json-parse-better-errors: 1.0.2
@@ -4785,7 +4785,7 @@ snapshots:
       node-libs-browser: 2.2.1
       schema-utils: 1.0.0
       tapable: 1.1.3
-      terser-webpack-plugin: 1.4.5(webpack@4.47.0(webpack-cli@3.3.12))
+      terser-webpack-plugin: 1.4.5(webpack@4.47.0)
       watchpack: 1.7.5
       webpack-sources: 1.4.3
     optionalDependencies:
