@@ -87,8 +87,8 @@ packages:
     peerDependencies:
       tslib: '2'
 
-  '@jsonjoy.com/json-pack@1.0.4':
-    resolution: {integrity: sha512-aOcSN4MeAtFROysrbqG137b7gaDDSmVrl5mpo6sT/w+kcXpWnzhMjmY/Fh/sDx26NBxyIE7MB1seqLeCAzy9Sg==}
+  '@jsonjoy.com/json-pack@1.1.0':
+    resolution: {integrity: sha512-zlQONA+msXPPwHWZMKFVS78ewFczIll5lXiVPwFPCZUsrOKdxc2AvxU1HoNBmMRhqDZUR9HkC3UOm+6pME6Xsg==}
     engines: {node: '>=10.0'}
     peerDependencies:
       tslib: '2'
@@ -146,8 +146,8 @@ packages:
   '@types/http-errors@2.0.4':
     resolution: {integrity: sha512-D0CFMMtydbJAegzOyHjtiKPLlvnm3iTZyZRSZoLq2mRhDdmLfIWOCYPfQJ4cu2erKghU++QvjcUjp/5h7hESpA==}
 
-  '@types/http-proxy@1.17.14':
-    resolution: {integrity: sha512-SSrD0c1OQzlFX7pGu1eXxSEjemej64aaNPRhhVYUGqXh0BtldAAx37MG8btcumvpgKyZp1F5Gn3JkktdxiFv6w==}
+  '@types/http-proxy@1.17.15':
+    resolution: {integrity: sha512-25g5atgiVNTIv0LBDTg1H74Hvayx0ajtJPLLcYE3whFv75J0pWNtOBzaXJQgDTmrX1bx5U9YC2w/n65BN1HwRQ==}
 
   '@types/json-schema@7.0.15':
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
@@ -161,8 +161,8 @@ packages:
   '@types/node-forge@1.3.11':
     resolution: {integrity: sha512-FQx220y22OKNTqaByeBGqHWYz4cl94tpcxeFdvBo3wjG6XPBuZ0BNgNZRV5J5TFmmcsJ4IzsLkmGRiQbnYsBEQ==}
 
-  '@types/node@22.1.0':
-    resolution: {integrity: sha512-AOmuRF0R2/5j1knA3c6G3HOk523Ga+l+ZXltX8SF1+5oqcXijjfTd8fY3XRZqSihEu9XhtQnKYLmkFaoxgsJHw==}
+  '@types/node@22.2.0':
+    resolution: {integrity: sha512-bm6EG6/pCpkxDf/0gDNDdtDILMOHgaQBVOJGdwsqClnxA3xL6jtMv76rLBc006RVMWbmaf0xbmom4Z/5o2nRkQ==}
 
   '@types/qs@6.9.15':
     resolution: {integrity: sha512-uXHQKES6DQKKCLh441Xv/dwxOq1TVS3JPUMlEqoEglvlhR6Mxnlew/Xq/LRVHpLyk7iK3zODe1qYHIMltO7XGg==}
@@ -1107,8 +1107,8 @@ packages:
     resolution: {integrity: sha512-7EwmXrOjyL+ChxMhmG5lnW9MPt1aIeZEwKhQzoBUdTV0N3zuwWDZYVJatDvZ2OyzPUvdIAZDsCetk3coyMfcnQ==}
     engines: {node: '>=0.10.0'}
 
-  foreground-child@3.2.1:
-    resolution: {integrity: sha512-PXUUyLqrR2XCWICfv6ukppP96sdFwWbNEnfEMt7jNsISjMsvaLNinAHNDYyvkyU+SZG2BTSbT5NjG+vZslfGTA==}
+  foreground-child@3.3.0:
+    resolution: {integrity: sha512-Ld2g8rrAyMYFXBhEqMz8ZAHBi4J4uS1i/CxGMDnjyFWddMXLVcDp051DZfu+t7+ab7Wv6SMqpWmyFIj5UbfFvg==}
     engines: {node: '>=14'}
 
   forwarded@0.2.0:
@@ -1633,8 +1633,8 @@ packages:
     resolution: {integrity: sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==}
     engines: {node: '>=0.10.0'}
 
-  launch-editor@2.8.0:
-    resolution: {integrity: sha512-vJranOAJrI/llyWGRQqiDM+adrw+k83fvmmx3+nV47g3+36xM15jE+zyZ6Ffel02+xSvuM0b2GDRosXZkbb6wA==}
+  launch-editor@2.8.1:
+    resolution: {integrity: sha512-elBx2l/tp9z99X5H/qev8uyDywVh0VXAwEbjk8kJhnc5grOFkGh7aW6q55me9xnYbss261XtnUrysZ+XvGbhQA==}
 
   levn@0.4.1:
     resolution: {integrity: sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==}
@@ -3038,7 +3038,7 @@ snapshots:
     dependencies:
       tslib: 2.6.3
 
-  '@jsonjoy.com/json-pack@1.0.4(tslib@2.6.3)':
+  '@jsonjoy.com/json-pack@1.1.0(tslib@2.6.3)':
     dependencies:
       '@jsonjoy.com/base64': 1.1.2(tslib@2.6.3)
       '@jsonjoy.com/util': 1.3.0(tslib@2.6.3)
@@ -3072,24 +3072,24 @@ snapshots:
   '@types/body-parser@1.19.5':
     dependencies:
       '@types/connect': 3.4.38
-      '@types/node': 22.1.0
+      '@types/node': 22.2.0
 
   '@types/bonjour@3.5.13':
     dependencies:
-      '@types/node': 22.1.0
+      '@types/node': 22.2.0
 
   '@types/connect-history-api-fallback@1.5.4':
     dependencies:
       '@types/express-serve-static-core': 4.19.5
-      '@types/node': 22.1.0
+      '@types/node': 22.2.0
 
   '@types/connect@3.4.38':
     dependencies:
-      '@types/node': 22.1.0
+      '@types/node': 22.2.0
 
   '@types/express-serve-static-core@4.19.5':
     dependencies:
-      '@types/node': 22.1.0
+      '@types/node': 22.2.0
       '@types/qs': 6.9.15
       '@types/range-parser': 1.2.7
       '@types/send': 0.17.4
@@ -3104,13 +3104,13 @@ snapshots:
   '@types/glob@7.2.0':
     dependencies:
       '@types/minimatch': 5.1.2
-      '@types/node': 22.1.0
+      '@types/node': 22.2.0
 
   '@types/http-errors@2.0.4': {}
 
-  '@types/http-proxy@1.17.14':
+  '@types/http-proxy@1.17.15':
     dependencies:
-      '@types/node': 22.1.0
+      '@types/node': 22.2.0
 
   '@types/json-schema@7.0.15': {}
 
@@ -3120,9 +3120,9 @@ snapshots:
 
   '@types/node-forge@1.3.11':
     dependencies:
-      '@types/node': 22.1.0
+      '@types/node': 22.2.0
 
-  '@types/node@22.1.0':
+  '@types/node@22.2.0':
     dependencies:
       undici-types: 6.13.0
 
@@ -3135,7 +3135,7 @@ snapshots:
   '@types/send@0.17.4':
     dependencies:
       '@types/mime': 1.3.5
-      '@types/node': 22.1.0
+      '@types/node': 22.2.0
 
   '@types/serve-index@1.9.4':
     dependencies:
@@ -3144,16 +3144,16 @@ snapshots:
   '@types/serve-static@1.15.7':
     dependencies:
       '@types/http-errors': 2.0.4
-      '@types/node': 22.1.0
+      '@types/node': 22.2.0
       '@types/send': 0.17.4
 
   '@types/sockjs@0.3.36':
     dependencies:
-      '@types/node': 22.1.0
+      '@types/node': 22.2.0
 
   '@types/ws@8.5.12':
     dependencies:
-      '@types/node': 22.1.0
+      '@types/node': 22.2.0
 
   '@webassemblyjs/ast@1.9.0':
     dependencies:
@@ -4320,7 +4320,7 @@ snapshots:
 
   for-in@1.0.2: {}
 
-  foreground-child@3.2.1:
+  foreground-child@3.3.0:
     dependencies:
       cross-spawn: 7.0.3
       signal-exit: 4.1.0
@@ -4393,7 +4393,7 @@ snapshots:
 
   glob@10.4.5:
     dependencies:
-      foreground-child: 3.2.1
+      foreground-child: 3.3.0
       jackspeak: 3.4.3
       minimatch: 9.0.5
       minipass: 7.1.2
@@ -4578,7 +4578,7 @@ snapshots:
 
   http-proxy-middleware@2.0.6(@types/express@4.17.21):
     dependencies:
-      '@types/http-proxy': 1.17.14
+      '@types/http-proxy': 1.17.15
       http-proxy: 1.18.1(debug@4.3.6(supports-color@6.1.0))
       is-glob: 4.0.3
       is-plain-obj: 3.0.0
@@ -4834,7 +4834,7 @@ snapshots:
 
   kind-of@6.0.3: {}
 
-  launch-editor@2.8.0:
+  launch-editor@2.8.1:
     dependencies:
       picocolors: 1.0.1
       shell-quote: 1.8.1
@@ -4908,7 +4908,7 @@ snapshots:
 
   memfs@4.11.1:
     dependencies:
-      '@jsonjoy.com/json-pack': 1.0.4(tslib@2.6.3)
+      '@jsonjoy.com/json-pack': 1.1.0(tslib@2.6.3)
       '@jsonjoy.com/util': 1.3.0(tslib@2.6.3)
       tree-dump: 1.0.2(tslib@2.6.3)
       tslib: 2.6.3
@@ -6191,7 +6191,7 @@ snapshots:
       html-entities: 2.5.2
       http-proxy-middleware: 2.0.6(@types/express@4.17.21)
       ipaddr.js: 2.2.0
-      launch-editor: 2.8.0
+      launch-editor: 2.8.1
       open: 10.1.0
       p-retry: 6.2.0
       rimraf: 5.0.10
