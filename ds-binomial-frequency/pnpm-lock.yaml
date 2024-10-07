@@ -1747,8 +1747,8 @@ packages:
     resolution: {integrity: sha512-J6SDjUgDxQj5NusnOtdFxDwN/+HWykR8GELwctJ7mdqhcyy1xEc4SRFHUXvxTp661YaVKAjfRLZ9cCqS6tn32A==}
     engines: {node: '>=0.10.0'}
 
-  regexp.prototype.flags@1.5.2:
-    resolution: {integrity: sha512-NcDiDkTLuPR+++OCKB0nWafEmhg/Da8aUPLPMQbK+bxKKCm1/S5he+AqYa4PlMCVBalb4/yxIRub6qkEx5yJbw==}
+  regexp.prototype.flags@1.5.3:
+    resolution: {integrity: sha512-vqlC04+RQoFalODCbCumG2xIOvapzVMHwsyIGM/SIE8fRhFFsXeH8/QQ+s0T0kDAhKc4k30s73/0ydkHQz6HlQ==}
     engines: {node: '>= 0.4'}
 
   remove-trailing-separator@1.1.0:
@@ -3042,7 +3042,7 @@ snapshots:
       is-regex: 1.1.4
       object-is: 1.1.6
       object-keys: 1.1.1
-      regexp.prototype.flags: 1.5.2
+      regexp.prototype.flags: 1.5.3
 
   default-gateway@4.2.0:
     dependencies:
@@ -4359,7 +4359,7 @@ snapshots:
       extend-shallow: 3.0.2
       safe-regex: 1.1.0
 
-  regexp.prototype.flags@1.5.2:
+  regexp.prototype.flags@1.5.3:
     dependencies:
       call-bind: 1.0.7
       define-properties: 1.2.1
