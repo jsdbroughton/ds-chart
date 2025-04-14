@@ -40,8 +40,8 @@ packages:
   '@types/minimatch@5.1.2':
     resolution: {integrity: sha512-K0VQKziLUWkVKiRVrx4a40iPaxTUefQmjtkQofBkYRcoaaL/8rhwDWww9qWbrgicNOgnpIsMxyNIUM4+n6dUIA==}
 
-  '@types/node@22.14.0':
-    resolution: {integrity: sha512-Kmpl+z84ILoG+3T/zQFyAJsU6EPTmOCj8/2+83fSN6djd6I4o7uOuGIH6vq3PrjY5BGitSbFuMN18j3iknubbA==}
+  '@types/node@22.14.1':
+    resolution: {integrity: sha512-u0HuPQwe/dHrItgHHpmw3N2fYCR6x4ivMNbPHRkBVP4CvN+kiRrKHWk3i8tXiO/joPwXLMYvF9TTF0eqgHIuOw==}
 
   '@webassemblyjs/ast@1.9.0':
     resolution: {integrity: sha512-C6wW5L+b7ogSDVqymbkkvuW9kruN//YisMED04xzeBBqjHa2FYnmvOlS6Xj68xWQRgWvI9cIglsjFowH/RJyEA==}
@@ -1001,8 +1001,8 @@ packages:
     resolution: {integrity: sha512-FtwrG/euBzaEjYeRqOgly7G0qviiXoJWnvEH2Z1plBdXgbyjv34pHTSb9zoeHMyDy33+DWy5Wt9Wo+TURtOYSQ==}
     engines: {node: '>= 0.8'}
 
-  http-parser-js@0.5.9:
-    resolution: {integrity: sha512-n1XsPy3rXVxlqxVioEWdC+0+M+SQw0DpJynwtOPo1X+ZlvdzTLtDBIJJlDQTnwZIFJrZSzSGmIOUdP8tu+SgLw==}
+  http-parser-js@0.5.10:
+    resolution: {integrity: sha512-Pysuw9XpUq5dVc/2SMHpuTY01RFl8fttgcyunjL7eEMhGM3cI4eOmiCycJDVCo/7O7ClfQD3SaI6ftDzqOXYMA==}
 
   http-proxy-middleware@0.19.1:
     resolution: {integrity: sha512-yHYTgWMQO8VvwNS22eLLloAkvungsKdKTLO8AJlftYIKNfJr3GK3zK0ZCfzDDGUBttdGc8xFy1mCitvNKQtC3Q==}
@@ -2351,13 +2351,13 @@ snapshots:
   '@types/glob@7.2.0':
     dependencies:
       '@types/minimatch': 5.1.2
-      '@types/node': 22.14.0
+      '@types/node': 22.14.1
 
   '@types/json-schema@7.0.15': {}
 
   '@types/minimatch@5.1.2': {}
 
-  '@types/node@22.14.0':
+  '@types/node@22.14.1':
     dependencies:
       undici-types: 6.21.0
 
@@ -3578,7 +3578,7 @@ snapshots:
       statuses: 2.0.1
       toidentifier: 1.0.1
 
-  http-parser-js@0.5.9: {}
+  http-parser-js@0.5.10: {}
 
   http-proxy-middleware@0.19.1(debug@4.4.0(supports-color@6.1.0))(supports-color@6.1.0):
     dependencies:
@@ -5008,7 +5008,7 @@ snapshots:
 
   websocket-driver@0.7.4:
     dependencies:
-      http-parser-js: 0.5.9
+      http-parser-js: 0.5.10
       safe-buffer: 5.2.1
       websocket-extensions: 0.1.4
 
