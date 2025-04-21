@@ -1575,8 +1575,8 @@ packages:
     resolution: {integrity: sha512-/E57AYkoeQ25qkxMj5PBOVgF8Kiu/h7cYS30Z5+R7WaiCCBfLq58ZI/dSeaEKb9WVJV5n/03QwrN3IeWIFllvw==}
     engines: {node: '>=6'}
 
-  portfinder@1.0.35:
-    resolution: {integrity: sha512-73JaFg4NwYNAufDtS5FsFu/PdM49ahJrO1i44aCRsDWju1z5wuGDaqyFUQWR6aJoK2JPDWlaYYAGFNIGTSUHSw==}
+  portfinder@1.0.36:
+    resolution: {integrity: sha512-gMKUzCoP+feA7t45moaSx7UniU7PgGN3hA8acAB+3Qn7/js0/lJ07fYZlxt9riE9S3myyxDCyAFzSrLlta0c9g==}
     engines: {node: '>= 10.12'}
 
   posix-character-classes@0.1.1:
@@ -4097,7 +4097,7 @@ snapshots:
     dependencies:
       find-up: 3.0.0
 
-  portfinder@1.0.35(supports-color@6.1.0):
+  portfinder@1.0.36(supports-color@6.1.0):
     dependencies:
       async: 3.2.6
       debug: 4.4.0(supports-color@6.1.0)
@@ -4811,7 +4811,7 @@ snapshots:
       loglevel: 1.9.2
       opn: 5.5.0
       p-retry: 3.0.1
-      portfinder: 1.0.35(supports-color@6.1.0)
+      portfinder: 1.0.36(supports-color@6.1.0)
       schema-utils: 1.0.0
       selfsigned: 1.10.14
       semver: 6.3.1
