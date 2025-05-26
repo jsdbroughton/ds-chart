@@ -31,8 +31,8 @@ packages:
   '@types/minimatch@5.1.2':
     resolution: {integrity: sha512-K0VQKziLUWkVKiRVrx4a40iPaxTUefQmjtkQofBkYRcoaaL/8rhwDWww9qWbrgicNOgnpIsMxyNIUM4+n6dUIA==}
 
-  '@types/node@22.15.17':
-    resolution: {integrity: sha512-wIX2aSZL5FE+MR0JlvF87BNVrtFWf6AE6rxSE9X7OwnVvoyCQjpzSRJ+M87se/4QCkCiebQAqrJ0y6fwIyi7nw==}
+  '@types/node@22.15.21':
+    resolution: {integrity: sha512-EV/37Td6c+MgKAbkcLG6vqZ2zEYHD7bvSrzqqs2RIhbA6w3x+Dqz8MZM3sP6kGTeLrdoOgKZe+Xja7tUB2DNkQ==}
 
   '@webassemblyjs/ast@1.9.0':
     resolution: {integrity: sha512-C6wW5L+b7ogSDVqymbkkvuW9kruN//YisMED04xzeBBqjHa2FYnmvOlS6Xj68xWQRgWvI9cIglsjFowH/RJyEA==}
@@ -497,8 +497,8 @@ packages:
       supports-color:
         optional: true
 
-  debug@4.4.0:
-    resolution: {integrity: sha512-6WTZ/IxCY/T6BALoZHaE4ctp9xm+Z5kY/pzYaCHRFeyVhojxlrm+46y68HA6hr0TcwEssoxNiDEUJQjfPZ/RYA==}
+  debug@4.4.1:
+    resolution: {integrity: sha512-KcKCqiftBJcZr++7ykoDIEwSa3XWowTfNPo92BYxjXiyYEVrUQh2aLyhxBCwww+heortUFxEJYcRzosstTEBYQ==}
     engines: {node: '>=6.0'}
     peerDependencies:
       supports-color: '*'
@@ -2283,11 +2283,11 @@ snapshots:
   '@types/glob@7.2.0':
     dependencies:
       '@types/minimatch': 5.1.2
-      '@types/node': 22.15.17
+      '@types/node': 22.15.21
 
   '@types/minimatch@5.1.2': {}
 
-  '@types/node@22.15.17':
+  '@types/node@22.15.21':
     dependencies:
       undici-types: 6.21.0
 
@@ -2915,7 +2915,7 @@ snapshots:
     optionalDependencies:
       supports-color: 6.1.0
 
-  debug@4.4.0(supports-color@6.1.0):
+  debug@4.4.1(supports-color@6.1.0):
     dependencies:
       ms: 2.1.3
     optionalDependencies:
@@ -3257,9 +3257,9 @@ snapshots:
       inherits: 2.0.4
       readable-stream: 2.3.8
 
-  follow-redirects@1.15.9(debug@4.4.0(supports-color@6.1.0)):
+  follow-redirects@1.15.9(debug@4.4.1(supports-color@6.1.0)):
     optionalDependencies:
-      debug: 4.4.0(supports-color@6.1.0)
+      debug: 4.4.1(supports-color@6.1.0)
 
   for-in@1.0.2: {}
 
@@ -3475,9 +3475,9 @@ snapshots:
 
   http-parser-js@0.5.10: {}
 
-  http-proxy-middleware@0.19.1(debug@4.4.0(supports-color@6.1.0))(supports-color@6.1.0):
+  http-proxy-middleware@0.19.1(debug@4.4.1(supports-color@6.1.0))(supports-color@6.1.0):
     dependencies:
-      http-proxy: 1.18.1(debug@4.4.0(supports-color@6.1.0))
+      http-proxy: 1.18.1(debug@4.4.1(supports-color@6.1.0))
       is-glob: 4.0.3
       lodash: 4.17.21
       micromatch: 3.1.10(supports-color@6.1.0)
@@ -3485,10 +3485,10 @@ snapshots:
       - debug
       - supports-color
 
-  http-proxy@1.18.1(debug@4.4.0(supports-color@6.1.0)):
+  http-proxy@1.18.1(debug@4.4.1(supports-color@6.1.0)):
     dependencies:
       eventemitter3: 4.0.7
-      follow-redirects: 1.15.9(debug@4.4.0(supports-color@6.1.0))
+      follow-redirects: 1.15.9(debug@4.4.1(supports-color@6.1.0))
       requires-port: 1.0.0
     transitivePeerDependencies:
       - debug
@@ -4100,7 +4100,7 @@ snapshots:
   portfinder@1.0.37(supports-color@6.1.0):
     dependencies:
       async: 3.2.6
-      debug: 4.4.0(supports-color@6.1.0)
+      debug: 4.4.1(supports-color@6.1.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -4491,7 +4491,7 @@ snapshots:
 
   spdy-transport@3.0.0(supports-color@6.1.0):
     dependencies:
-      debug: 4.4.0(supports-color@6.1.0)
+      debug: 4.4.1(supports-color@6.1.0)
       detect-node: 2.1.0
       hpack.js: 2.1.6
       obuf: 1.1.2
@@ -4502,7 +4502,7 @@ snapshots:
 
   spdy@4.0.2(supports-color@6.1.0):
     dependencies:
-      debug: 4.4.0(supports-color@6.1.0)
+      debug: 4.4.1(supports-color@6.1.0)
       handle-thing: 2.0.1
       http-deceiver: 1.2.7
       select-hose: 2.0.0
@@ -4798,11 +4798,11 @@ snapshots:
       chokidar: 2.1.8(supports-color@6.1.0)
       compression: 1.8.0(supports-color@6.1.0)
       connect-history-api-fallback: 1.6.0
-      debug: 4.4.0(supports-color@6.1.0)
+      debug: 4.4.1(supports-color@6.1.0)
       del: 4.1.1
       express: 4.21.2(supports-color@6.1.0)
       html-entities: 1.4.0
-      http-proxy-middleware: 0.19.1(debug@4.4.0(supports-color@6.1.0))(supports-color@6.1.0)
+      http-proxy-middleware: 0.19.1(debug@4.4.1(supports-color@6.1.0))(supports-color@6.1.0)
       import-local: 2.0.0
       internal-ip: 4.3.0
       ip: 1.1.9
