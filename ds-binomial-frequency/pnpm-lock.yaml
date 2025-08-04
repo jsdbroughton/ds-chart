@@ -826,8 +826,8 @@ packages:
   flush-write-stream@1.1.1:
     resolution: {integrity: sha512-3Z4XhFZ3992uIq0XOqb9AreonueSYphE6oYbpt5+3u06JWklbsPkNv3ZKkP9Bz/r+1MWCaMoSQ28P85+1Yc77w==}
 
-  follow-redirects@1.15.9:
-    resolution: {integrity: sha512-gew4GsXizNgdoRyqmyfMHyAmXsZDk6mHkSxZFCzW9gwlbtOW44CDtYavM+y+72qD/Vq2l550kMF52DT8fOLJqQ==}
+  follow-redirects@1.15.11:
+    resolution: {integrity: sha512-deG2P0JfjrTxl50XGCDyfI97ZGVCxIpfKYmfyrQ54n5FO/0gfIES8C/Psl6kWVDolizcaaxZJnTS0QSMxvnsBQ==}
     engines: {node: '>=4.0'}
     peerDependencies:
       debug: '*'
@@ -3435,7 +3435,7 @@ snapshots:
       inherits: 2.0.4
       readable-stream: 2.3.8
 
-  follow-redirects@1.15.9(debug@4.4.1(supports-color@6.1.0)):
+  follow-redirects@1.15.11(debug@4.4.1(supports-color@6.1.0)):
     optionalDependencies:
       debug: 4.4.1(supports-color@6.1.0)
 
@@ -3678,7 +3678,7 @@ snapshots:
   http-proxy@1.18.1(debug@4.4.1(supports-color@6.1.0)):
     dependencies:
       eventemitter3: 4.0.7
-      follow-redirects: 1.15.9(debug@4.4.1(supports-color@6.1.0))
+      follow-redirects: 1.15.11(debug@4.4.1(supports-color@6.1.0))
       requires-port: 1.0.0
     transitivePeerDependencies:
       - debug
