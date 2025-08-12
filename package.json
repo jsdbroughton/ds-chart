@@ -20,7 +20,7 @@
   "devDependencies": {
     "@google/dscc": "0.3.22",
     "@google/dscc-scripts": "1.0.17",
-    "copy-webpack-plugin": "13.0.0",
+    "copy-webpack-plugin": "13.0.1",
     "eslint": "9.33.0",
     "eslint-config-prettier": "10.1.8",
     "prettier": "3.6.2",
