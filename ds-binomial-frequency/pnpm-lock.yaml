@@ -16,7 +16,7 @@ importers:
         version: 1.0.17
       copy-webpack-plugin:
         specifier: 13.0.1
-        version: 13.0.1(webpack@4.47.0(webpack-cli@3.3.12(webpack@4.47.0)))
+        version: 13.0.1(webpack@4.47.0)
 
 packages:
 
@@ -2382,7 +2382,7 @@ snapshots:
       cli-spinner: 0.2.10
       copy-webpack-plugin: 4.6.0
       execa: 1.0.0
-      mini-css-extract-plugin: 0.5.0(webpack@4.47.0(webpack-cli@3.3.12(webpack@4.47.0)))
+      mini-css-extract-plugin: 0.5.0(webpack@4.47.0)
       mz: 2.7.0
       open: 6.4.0
       postcss-loader: 3.0.0
@@ -2391,7 +2391,7 @@ snapshots:
       typescript: 3.9.10
       webpack: 4.47.0(webpack-cli@3.3.12(webpack@4.47.0))
       webpack-cli: 3.3.12(webpack@4.47.0)
-      webpack-dev-server: 3.11.3(webpack-cli@3.3.12(webpack@4.47.0))(webpack@4.47.0(webpack-cli@3.3.12(webpack@4.47.0)))
+      webpack-dev-server: 3.11.3(webpack-cli@3.3.12(webpack@4.47.0))(webpack@4.47.0)
       webpack-merge: 4.2.2
       webpack-plugin-replace: 1.2.0
     transitivePeerDependencies:
@@ -2993,7 +2993,7 @@ snapshots:
 
   copy-descriptor@0.1.1: {}
 
-  copy-webpack-plugin@13.0.1(webpack@4.47.0(webpack-cli@3.3.12(webpack@4.47.0))):
+  copy-webpack-plugin@13.0.1(webpack@4.47.0):
     dependencies:
       glob-parent: 6.0.2
       normalize-path: 3.0.0
@@ -3993,7 +3993,7 @@ snapshots:
 
   mime@2.6.0: {}
 
-  mini-css-extract-plugin@0.5.0(webpack@4.47.0(webpack-cli@3.3.12(webpack@4.47.0))):
+  mini-css-extract-plugin@0.5.0(webpack@4.47.0):
     dependencies:
       loader-utils: 1.4.2
       schema-utils: 1.0.0
@@ -5028,7 +5028,7 @@ snapshots:
       webpack: 4.47.0(webpack-cli@3.3.12(webpack@4.47.0))
       yargs: 13.3.2
 
-  webpack-dev-middleware@3.7.3(webpack@4.47.0(webpack-cli@3.3.12(webpack@4.47.0))):
+  webpack-dev-middleware@3.7.3(webpack@4.47.0):
     dependencies:
       memory-fs: 0.4.1
       mime: 2.6.0
@@ -5037,7 +5037,7 @@ snapshots:
       webpack: 4.47.0(webpack-cli@3.3.12(webpack@4.47.0))
       webpack-log: 2.0.0
 
-  webpack-dev-server@3.11.3(webpack-cli@3.3.12(webpack@4.47.0))(webpack@4.47.0(webpack-cli@3.3.12(webpack@4.47.0))):
+  webpack-dev-server@3.11.3(webpack-cli@3.3.12(webpack@4.47.0))(webpack@4.47.0):
     dependencies:
       ansi-html-community: 0.0.8
       bonjour: 3.5.0
@@ -5069,7 +5069,7 @@ snapshots:
       supports-color: 6.1.0
       url: 0.11.4
       webpack: 4.47.0(webpack-cli@3.3.12(webpack@4.47.0))
-      webpack-dev-middleware: 3.7.3(webpack@4.47.0(webpack-cli@3.3.12(webpack@4.47.0)))
+      webpack-dev-middleware: 3.7.3(webpack@4.47.0)
       webpack-log: 2.0.0
       ws: 6.2.3
       yargs: 13.3.2
