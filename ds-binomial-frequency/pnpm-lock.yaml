@@ -15,8 +15,8 @@ importers:
         specifier: 1.0.17
         version: 1.0.17
       copy-webpack-plugin:
-        specifier: 13.0.1
-        version: 13.0.1(webpack@4.47.0)
+        specifier: 14.0.0
+        version: 14.0.0(webpack@4.47.0)
 
 packages:
 
@@ -491,9 +491,9 @@ packages:
     resolution: {integrity: sha512-XgZ0pFcakEUlbwQEVNg3+QAis1FyTL3Qel9FYy8pSkQqoG3PNoT0bOCQtOXcOkur21r2Eq2kI+IE+gsmAEVlYw==}
     engines: {node: '>=0.10.0'}
 
-  copy-webpack-plugin@13.0.1:
-    resolution: {integrity: sha512-J+YV3WfhY6W/Xf9h+J1znYuqTye2xkBUIGyTPWuBAT27qajBa5mR4f8WBmfDY3YjRftT2kqZZiLi1qf0H+UOFw==}
-    engines: {node: '>= 18.12.0'}
+  copy-webpack-plugin@14.0.0:
+    resolution: {integrity: sha512-3JLW90aBGeaTLpM7mYQKpnVdgsUZRExY55giiZgLuX/xTQRUs1dOCwbBnWnvY6Q6rfZoXMNwzOQJCSZPppfqXA==}
+    engines: {node: '>= 20.9.0'}
     peerDependencies:
       webpack: ^5.1.0
 
@@ -1890,8 +1890,9 @@ packages:
   serialize-javascript@4.0.0:
     resolution: {integrity: sha512-GaNA54380uFefWghODBWEGisLZFj00nS5ACs6yHa9nLqlLpVLO8ChDGeKRjZnV4Nh4n0Qi7nhYZD/9fCPzEqkw==}
 
-  serialize-javascript@6.0.2:
-    resolution: {integrity: sha512-Saa1xPByTTq2gdeFZYLLo+RFE35NHZkAbqZeWNd3BpzppeVisAqpDjcp8dyf6uIvEqJRd46jemmyA4iFIeVk8g==}
+  serialize-javascript@7.0.3:
+    resolution: {integrity: sha512-h+cZ/XXarqDgCjo+YSyQU/ulDEESGGf8AMK9pPNmhNSl/FzPl6L8pMp1leca5z6NuG6tvV/auC8/43tmovowww==}
+    engines: {node: '>=20.0.0'}
 
   serve-index@1.9.2:
     resolution: {integrity: sha512-KDj11HScOaLmrPxl70KYNW1PksP4Nb/CLL2yvC+Qd2kHMPEEpfc4Re2e4FOay+bC/+XQl/7zAcWON3JVo5v3KQ==}
@@ -2382,7 +2383,7 @@ snapshots:
       terminal-link: 1.3.0
       ts-loader: 7.0.5(typescript@3.9.10)
       typescript: 3.9.10
-      webpack: 4.47.0(webpack-cli@3.3.12(webpack@4.47.0))
+      webpack: 4.47.0(webpack-cli@3.3.12)
       webpack-cli: 3.3.12(webpack@4.47.0)
       webpack-dev-server: 3.11.3(webpack-cli@3.3.12(webpack@4.47.0))(webpack@4.47.0)
       webpack-merge: 4.2.2
@@ -2988,14 +2989,14 @@ snapshots:
 
   copy-descriptor@0.1.1: {}
 
-  copy-webpack-plugin@13.0.1(webpack@4.47.0):
+  copy-webpack-plugin@14.0.0(webpack@4.47.0):
     dependencies:
       glob-parent: 6.0.2
       normalize-path: 3.0.0
       schema-utils: 4.3.3
-      serialize-javascript: 6.0.2
+      serialize-javascript: 7.0.3
       tinyglobby: 0.2.15
-      webpack: 4.47.0(webpack-cli@3.3.12(webpack@4.47.0))
+      webpack: 4.47.0(webpack-cli@3.3.12)
 
   copy-webpack-plugin@4.6.0:
     dependencies:
@@ -3986,7 +3987,7 @@ snapshots:
     dependencies:
       loader-utils: 1.4.2
       schema-utils: 1.0.0
-      webpack: 4.47.0(webpack-cli@3.3.12(webpack@4.47.0))
+      webpack: 4.47.0(webpack-cli@3.3.12)
       webpack-sources: 1.4.3
 
   minimalistic-assert@1.0.1: {}
@@ -4541,9 +4542,7 @@ snapshots:
     dependencies:
       randombytes: 2.1.0
 
-  serialize-javascript@6.0.2:
-    dependencies:
-      randombytes: 2.1.0
+  serialize-javascript@7.0.3: {}
 
   serve-index@1.9.2(supports-color@6.1.0):
     dependencies:
@@ -4816,7 +4815,7 @@ snapshots:
       serialize-javascript: 4.0.0
       source-map: 0.6.1
       terser: 4.8.1
-      webpack: 4.47.0(webpack-cli@3.3.12(webpack@4.47.0))
+      webpack: 4.47.0(webpack-cli@3.3.12)
       webpack-sources: 1.4.3
       worker-farm: 1.7.0
 
@@ -5006,7 +5005,7 @@ snapshots:
       loader-utils: 1.4.2
       supports-color: 6.1.0
       v8-compile-cache: 2.4.0
-      webpack: 4.47.0(webpack-cli@3.3.12(webpack@4.47.0))
+      webpack: 4.47.0(webpack-cli@3.3.12)
       yargs: 13.3.2
 
   webpack-dev-middleware@3.7.3(webpack@4.47.0):
@@ -5015,7 +5014,7 @@ snapshots:
       mime: 2.6.0
       mkdirp: 0.5.6
       range-parser: 1.2.1
-      webpack: 4.47.0(webpack-cli@3.3.12(webpack@4.47.0))
+      webpack: 4.47.0(webpack-cli@3.3.12)
       webpack-log: 2.0.0
 
   webpack-dev-server@3.11.3(webpack-cli@3.3.12(webpack@4.47.0))(webpack@4.47.0):
@@ -5049,7 +5048,7 @@ snapshots:
       strip-ansi: 3.0.1
       supports-color: 6.1.0
       url: 0.11.4
-      webpack: 4.47.0(webpack-cli@3.3.12(webpack@4.47.0))
+      webpack: 4.47.0(webpack-cli@3.3.12)
       webpack-dev-middleware: 3.7.3(webpack@4.47.0)
       webpack-log: 2.0.0
       ws: 6.2.3
@@ -5076,7 +5075,7 @@ snapshots:
       source-list-map: 2.0.1
       source-map: 0.6.1
 
-  webpack@4.47.0(webpack-cli@3.3.12(webpack@4.47.0)):
+  webpack@4.47.0(webpack-cli@3.3.12):
     dependencies:
       '@webassemblyjs/ast': 1.9.0
       '@webassemblyjs/helper-module-context': 1.9.0
