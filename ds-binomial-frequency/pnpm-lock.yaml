@@ -44,8 +44,8 @@ packages:
     resolution: {integrity: sha512-zmPitbQ8+6zNutpwgcQuLcsEpn/Cj54Kbn7L5pX0Os5kdWplB7xPgEh/g+SWOB/qmows2gpuCaPyduq8ZZRnxA==}
     deprecated: This is a stub types definition. minimatch provides its own type definitions, so you do not need this installed.
 
-  '@types/node@25.5.0':
-    resolution: {integrity: sha512-jp2P3tQMSxWugkCUKLRPVUpGaL5MVFwF8RDuSRztfwgN1wmqJeMSbKlnEtQqU8UrhTmzEmZdu2I6v2dpp7XIxw==}
+  '@types/node@25.5.2':
+    resolution: {integrity: sha512-tO4ZIRKNC+MDWV4qKVZe3Ql/woTnmHDr5JD8UI5hn2pwBrHEwOEMZK7WlNb5RKB6EoJ02gwmQS9OrjuFnZYdpg==}
 
   '@webassemblyjs/ast@1.9.0':
     resolution: {integrity: sha512-C6wW5L+b7ogSDVqymbkkvuW9kruN//YisMED04xzeBBqjHa2FYnmvOlS6Xj68xWQRgWvI9cIglsjFowH/RJyEA==}
@@ -1289,8 +1289,8 @@ packages:
     resolution: {integrity: sha512-7AO748wWnIhNqAuaty2ZWHkQHRSNfPVIsPIfwEOWO22AmaoVrWavlOcMR5nzTLNYvp36X220/maaRsrec1G65A==}
     engines: {node: '>=6'}
 
-  lodash@4.17.23:
-    resolution: {integrity: sha512-LgVTMpQtIopCi79SJeDiP0TfWi5CNEc/L/aRdTh3yIvmZXTnheWpKjSZhnvMl8iXbC1tFg9gdHHDMLoV7CnG+w==}
+  lodash@4.18.1:
+    resolution: {integrity: sha512-dMInicTPVE8d1e5otfwmmjlxkZoUpiVLwyeTdUsi/Caj/gfzzblBcCE5sRHV/AsjuCmxWrte2TNGSYuCeCq+0Q==}
 
   loglevel@1.9.2:
     resolution: {integrity: sha512-HgMmCqIJSAKqo68l0rS2AanEWfkxaZ5wNiEFb5ggm08lDs9Xl2KxBlX3PTcaD2chBM1gXAYf491/M2Rv8Jwayg==}
@@ -1389,8 +1389,8 @@ packages:
   minimalistic-crypto-utils@1.0.1:
     resolution: {integrity: sha512-JIYlbt6g8i5jKfJ3xz7rF0LXmv2TkDxBLUkiBeZ7bAx4GnnNMr8xFpGnOxn6GhTEHx3SjRrZEoU+j04prX1ktg==}
 
-  minimatch@10.2.4:
-    resolution: {integrity: sha512-oRjTw/97aTBN0RHbYCdtF1MQfvusSIBQM0IZEgzl6426+8jSC0nF1a/GmnVLpfB9yyr6g6FTqWqiZVbxrtaCIg==}
+  minimatch@10.2.5:
+    resolution: {integrity: sha512-MULkVLfKGYDFYejP07QOurDLLQpcjk7Fw+7jXS2R2czRQzR56yHRveU5NDJEOviH+hETZKSkIk5c+T23GjFUMg==}
     engines: {node: 18 || 20 || >=22}
 
   minimatch@3.1.5:
@@ -2383,7 +2383,7 @@ snapshots:
       terminal-link: 1.3.0
       ts-loader: 7.0.5(typescript@3.9.10)
       typescript: 3.9.10
-      webpack: 4.47.0(webpack-cli@3.3.12)
+      webpack: 4.47.0(webpack-cli@3.3.12(webpack@4.47.0))
       webpack-cli: 3.3.12(webpack@4.47.0)
       webpack-dev-server: 3.11.3(webpack-cli@3.3.12(webpack@4.47.0))(webpack@4.47.0)
       webpack-merge: 4.2.2
@@ -2406,15 +2406,15 @@ snapshots:
   '@types/glob@7.2.0':
     dependencies:
       '@types/minimatch': 6.0.0
-      '@types/node': 25.5.0
+      '@types/node': 25.5.2
 
   '@types/json-schema@7.0.15': {}
 
   '@types/minimatch@6.0.0':
     dependencies:
-      minimatch: 10.2.4
+      minimatch: 10.2.5
 
-  '@types/node@25.5.0':
+  '@types/node@25.5.2':
     dependencies:
       undici-types: 7.18.2
 
@@ -2996,7 +2996,7 @@ snapshots:
       schema-utils: 4.3.3
       serialize-javascript: 7.0.5
       tinyglobby: 0.2.15
-      webpack: 4.47.0(webpack-cli@3.3.12)
+      webpack: 4.47.0(webpack-cli@3.3.12(webpack@4.47.0))
 
   copy-webpack-plugin@4.6.0:
     dependencies:
@@ -3660,7 +3660,7 @@ snapshots:
     dependencies:
       http-proxy: 1.18.1(debug@4.4.3(supports-color@6.1.0))
       is-glob: 4.0.3
-      lodash: 4.17.23
+      lodash: 4.18.1
       micromatch: 3.1.10(supports-color@6.1.0)
     transitivePeerDependencies:
       - debug
@@ -3891,7 +3891,7 @@ snapshots:
       p-locate: 3.0.0
       path-exists: 3.0.0
 
-  lodash@4.17.23: {}
+  lodash@4.18.1: {}
 
   loglevel@1.9.2: {}
 
@@ -3987,14 +3987,14 @@ snapshots:
     dependencies:
       loader-utils: 1.4.2
       schema-utils: 1.0.0
-      webpack: 4.47.0(webpack-cli@3.3.12)
+      webpack: 4.47.0(webpack-cli@3.3.12(webpack@4.47.0))
       webpack-sources: 1.4.3
 
   minimalistic-assert@1.0.1: {}
 
   minimalistic-crypto-utils@1.0.1: {}
 
-  minimatch@10.2.4:
+  minimatch@10.2.5:
     dependencies:
       brace-expansion: 5.0.5
 
@@ -4815,7 +4815,7 @@ snapshots:
       serialize-javascript: 4.0.0
       source-map: 0.6.1
       terser: 4.8.1
-      webpack: 4.47.0(webpack-cli@3.3.12)
+      webpack: 4.47.0(webpack-cli@3.3.12(webpack@4.47.0))
       webpack-sources: 1.4.3
       worker-farm: 1.7.0
 
@@ -5005,7 +5005,7 @@ snapshots:
       loader-utils: 1.4.2
       supports-color: 6.1.0
       v8-compile-cache: 2.4.0
-      webpack: 4.47.0(webpack-cli@3.3.12)
+      webpack: 4.47.0(webpack-cli@3.3.12(webpack@4.47.0))
       yargs: 13.3.2
 
   webpack-dev-middleware@3.7.3(webpack@4.47.0):
@@ -5014,7 +5014,7 @@ snapshots:
       mime: 2.6.0
       mkdirp: 0.5.6
       range-parser: 1.2.1
-      webpack: 4.47.0(webpack-cli@3.3.12)
+      webpack: 4.47.0(webpack-cli@3.3.12(webpack@4.47.0))
       webpack-log: 2.0.0
 
   webpack-dev-server@3.11.3(webpack-cli@3.3.12(webpack@4.47.0))(webpack@4.47.0):
@@ -5048,7 +5048,7 @@ snapshots:
       strip-ansi: 3.0.1
       supports-color: 6.1.0
       url: 0.11.4
-      webpack: 4.47.0(webpack-cli@3.3.12)
+      webpack: 4.47.0(webpack-cli@3.3.12(webpack@4.47.0))
       webpack-dev-middleware: 3.7.3(webpack@4.47.0)
       webpack-log: 2.0.0
       ws: 6.2.3
@@ -5066,7 +5066,7 @@ snapshots:
 
   webpack-merge@4.2.2:
     dependencies:
-      lodash: 4.17.23
+      lodash: 4.18.1
 
   webpack-plugin-replace@1.2.0: {}
 
@@ -5075,7 +5075,7 @@ snapshots:
       source-list-map: 2.0.1
       source-map: 0.6.1
 
-  webpack@4.47.0(webpack-cli@3.3.12):
+  webpack@4.47.0(webpack-cli@3.3.12(webpack@4.47.0)):
     dependencies:
       '@webassemblyjs/ast': 1.9.0
       '@webassemblyjs/helper-module-context': 1.9.0
