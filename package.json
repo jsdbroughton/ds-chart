@@ -24,6 +24,6 @@
     "eslint": "10.6.0",
     "eslint-config-prettier": "10.1.8",
     "prettier": "3.9.4",
-    "webpack-dev-server": "5.2.5"
+    "webpack-dev-server": "5.2.6"
   }
 }

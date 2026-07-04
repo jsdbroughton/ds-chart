@@ -27,8 +27,8 @@ importers:
         specifier: 3.9.4
         version: 3.9.4
       webpack-dev-server:
-        specifier: 5.2.5
-        version: 5.2.5(supports-color@6.1.0)(tslib@2.8.1)(webpack@4.47.0)
+        specifier: 5.2.6
+        version: 5.2.6(tslib@2.8.1)(webpack@4.47.0)
 
 packages:
 
@@ -2864,8 +2864,8 @@ packages:
       webpack-cli:
         optional: true
 
-  webpack-dev-server@5.2.5:
-    resolution: {integrity: sha512-4wZtCquSuv9CKX8oybo+mqxtxZqWz47uM1Ch94lxowBztOhWCbhqvRbfC/mODOwxgV2brY+JGZpHq58/SuVFYg==}
+  webpack-dev-server@5.2.6:
+    resolution: {integrity: sha512-HNLRmamRvVavZQ+avceZifmv8hmdUjg43t6MI4SqJDwFdW7RPQwH5vzGhDRZSX59SgfbeHhLnq3g+uooWo7pVw==}
     engines: {node: '>= 18.12.0'}
     hasBin: true
     peerDependencies:
@@ -6338,7 +6338,7 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  webpack-dev-server@5.2.5(supports-color@6.1.0)(tslib@2.8.1)(webpack@4.47.0):
+  webpack-dev-server@5.2.6(tslib@2.8.1)(webpack@4.47.0):
     dependencies:
       '@types/bonjour': 3.5.13
       '@types/connect-history-api-fallback': 1.5.4
