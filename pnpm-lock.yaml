@@ -19,16 +19,16 @@ importers:
         version: 14.0.0(webpack@4.47.0)
       eslint:
         specifier: 10.6.0
-        version: 10.6.0
+        version: 10.6.0(supports-color@6.1.0)
       eslint-config-prettier:
         specifier: 10.1.8
-        version: 10.1.8(eslint@10.6.0)
+        version: 10.1.8(eslint@10.6.0(supports-color@6.1.0))
       prettier:
-        specifier: 3.9.4
-        version: 3.9.4
+        specifier: 3.9.5
+        version: 3.9.5
       webpack-dev-server:
         specifier: 6.0.0
-        version: 6.0.0(tslib@2.8.1)(webpack@4.47.0)
+        version: 6.0.0(supports-color@6.1.0)(tslib@2.8.1)(webpack@4.47.0)
 
 packages:
 
@@ -2246,8 +2246,8 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
 
-  prettier@3.9.4:
-    resolution: {integrity: sha512-yWG/o/4oJfo036EKAfK6ACAoDOfHeRHx4tuxkfBZiauURiaSmYwlpOr5LQqKtIkRD2z1PLteme2WoxEnj4tHTg==}
+  prettier@3.9.5:
+    resolution: {integrity: sha512-/FVl766LpUfB5vXgCYOYa0MeV/441Ia99AeICQIQFTY/Nw0roZwULcXpku5i1/m5kt/baz+s4Zogspd839HSMg==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -3060,14 +3060,14 @@ packages:
 
 snapshots:
 
-  '@eslint-community/eslint-utils@4.9.1(eslint@10.6.0)':
+  '@eslint-community/eslint-utils@4.9.1(eslint@10.6.0(supports-color@6.1.0))':
     dependencies:
-      eslint: 10.6.0
+      eslint: 10.6.0(supports-color@6.1.0)
       eslint-visitor-keys: 3.4.3
 
   '@eslint-community/regexpp@4.12.2': {}
 
-  '@eslint/config-array@0.23.5':
+  '@eslint/config-array@0.23.5(supports-color@6.1.0)':
     dependencies:
       '@eslint/object-schema': 3.0.5
       debug: 4.4.3(supports-color@6.1.0)
@@ -3720,7 +3720,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  body-parser@2.3.0:
+  body-parser@2.3.0(supports-color@6.1.0):
     dependencies:
       bytes: 3.1.2
       content-type: 2.0.0
@@ -4326,9 +4326,9 @@ snapshots:
 
   escape-string-regexp@4.0.0: {}
 
-  eslint-config-prettier@10.1.8(eslint@10.6.0):
+  eslint-config-prettier@10.1.8(eslint@10.6.0(supports-color@6.1.0)):
     dependencies:
-      eslint: 10.6.0
+      eslint: 10.6.0(supports-color@6.1.0)
 
   eslint-scope@4.0.3:
     dependencies:
@@ -4346,11 +4346,11 @@ snapshots:
 
   eslint-visitor-keys@5.0.1: {}
 
-  eslint@10.6.0:
+  eslint@10.6.0(supports-color@6.1.0):
     dependencies:
-      '@eslint-community/eslint-utils': 4.9.1(eslint@10.6.0)
+      '@eslint-community/eslint-utils': 4.9.1(eslint@10.6.0(supports-color@6.1.0))
       '@eslint-community/regexpp': 4.12.2
-      '@eslint/config-array': 0.23.5
+      '@eslint/config-array': 0.23.5(supports-color@6.1.0)
       '@eslint/config-helpers': 0.6.0
       '@eslint/core': 1.2.1
       '@eslint/plugin-kit': 0.7.2
@@ -4478,10 +4478,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  express@5.2.1:
+  express@5.2.1(supports-color@6.1.0):
     dependencies:
       accepts: 2.0.0
-      body-parser: 2.3.0
+      body-parser: 2.3.0(supports-color@6.1.0)
       content-disposition: 1.1.0
       content-type: 1.0.5
       cookie: 0.7.2
@@ -4491,7 +4491,7 @@ snapshots:
       encodeurl: 2.0.0
       escape-html: 1.0.3
       etag: 1.8.1
-      finalhandler: 2.1.1
+      finalhandler: 2.1.1(supports-color@6.1.0)
       fresh: 2.0.0
       http-errors: 2.0.1
       merge-descriptors: 2.0.0
@@ -4502,8 +4502,8 @@ snapshots:
       proxy-addr: 2.0.7
       qs: 6.15.3
       range-parser: 1.3.0
-      router: 2.2.0
-      send: 1.2.1
+      router: 2.2.0(supports-color@6.1.0)
+      send: 1.2.1(supports-color@6.1.0)
       serve-static: 2.2.1
       statuses: 2.0.2
       type-is: 2.1.0
@@ -4581,7 +4581,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  finalhandler@2.1.1:
+  finalhandler@2.1.1(supports-color@6.1.0):
     dependencies:
       debug: 4.4.3(supports-color@6.1.0)
       encodeurl: 2.0.0
@@ -4888,7 +4888,7 @@ snapshots:
       - debug
       - supports-color
 
-  http-proxy-middleware@4.2.0:
+  http-proxy-middleware@4.2.0(supports-color@6.1.0):
     dependencies:
       debug: 4.4.3(supports-color@6.1.0)
       httpxy: 0.5.4
@@ -5207,7 +5207,7 @@ snapshots:
 
   md5.js@1.3.5:
     dependencies:
-      hash-base: 3.0.5
+      hash-base: 3.1.2
       inherits: 2.0.4
       safe-buffer: 5.2.1
 
@@ -5686,7 +5686,7 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier@3.9.4: {}
+  prettier@3.9.5: {}
 
   process-nextick-args@2.0.1: {}
 
@@ -5863,7 +5863,7 @@ snapshots:
       hash-base: 3.1.2
       inherits: 2.0.4
 
-  router@2.2.0:
+  router@2.2.0(supports-color@6.1.0):
     dependencies:
       debug: 4.4.3(supports-color@6.1.0)
       depd: 2.0.0
@@ -5935,7 +5935,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  send@1.2.1:
+  send@1.2.1(supports-color@6.1.0):
     dependencies:
       debug: 4.4.3(supports-color@6.1.0)
       encodeurl: 2.0.0
@@ -5985,7 +5985,7 @@ snapshots:
       encodeurl: 2.0.0
       escape-html: 1.0.3
       parseurl: 1.3.3
-      send: 1.2.1
+      send: 1.2.1(supports-color@6.1.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -6529,7 +6529,7 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  webpack-dev-server@6.0.0(tslib@2.8.1)(webpack@4.47.0):
+  webpack-dev-server@6.0.0(supports-color@6.1.0)(tslib@2.8.1)(webpack@4.47.0):
     dependencies:
       '@types/bonjour': 3.5.13
       '@types/connect-history-api-fallback': 1.5.4
@@ -6543,9 +6543,9 @@ snapshots:
       chokidar: 5.0.0
       compression: 1.8.1(supports-color@6.1.0)
       connect-history-api-fallback: 2.0.0
-      express: 5.2.1
+      express: 5.2.1(supports-color@6.1.0)
       graceful-fs: 4.2.11
-      http-proxy-middleware: 4.2.0
+      http-proxy-middleware: 4.2.0(supports-color@6.1.0)
       ipaddr.js: 2.4.0
       launch-editor: 2.14.1
       open: 11.0.0
